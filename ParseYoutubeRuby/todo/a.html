@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html class="no-js" lang=s"en">
+    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+
+  <head>
+
+<!-- start Mixpanel -->
+<script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+mixpanel.init('acc4732103c321172409287360ff25ce', {
+  'loaded':function(){
+    window.onload = function(){
+      if(document.getElementById('did') !== null){
+        console.log('updated');
+        document.getElementById('did').value = mixpanel.get_distinct_id();
+      }else{
+        console.log('nope');
+      }
+    }
+  }
+});
+    </script>
+<!-- end Mixpanel -->
+
+
+ <!-- this is the GA tracking code -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44988872-1', 'swishanalytics.com');
+  ga('require', 'displayfeatures'); 
+  ga('require', 'linkid', 'linkid.js'); 
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1046588175457556');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1046588175457556&ev=PageView&noscript=1"
+/></noscript>
+
+<script>
+// ViewContent
+// Track key page views (ex: product page, landing page or article)
+fbq('track', 'ViewContent');
+</script>
+<!-- End Facebook Pixel Code -->
+
+
+    <meta charset="utf-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQcGV1NRChADV1VaAQkEUg=="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(16),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(17),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,v="fn"+h,w="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(v,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(v,function(t,n){i(w,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(v,function(t,n){i(w,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(19)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(19)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(19)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(19)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(19)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,w="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(w,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!v&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(16),s=t(17),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t,n){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,n])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){if(!o)return!1;if(t!==o)return!1;if(!n)return!0;if(!i)return!1;for(var e=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==e[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}n.exports={agent:o,version:i,match:r}},{}],16:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],17:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],18:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],19:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(17),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=m(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[g[e]];return d&&d.push([b,e,r,a]),a}}function p(t,n){y[t]=m(t).concat(n)}function h(t,n){var e=y[t];if(e)for(var r=0;r<e.length;r++)e[r]===n&&e.splice(r,1)}function m(t){return y[t]||[]}function v(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",g[e]=n,n in u||(u[n]=[])})}var y={},g={},b={on:p,addEventListener:p,removeEventListener:h,emit:e,get:v,listeners:m,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(16),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!E++){var t=x.info=NREUM.info,n=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(g,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+x.offset],null,"api");var e=p.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-x.offset}var s=(new Date).getTime(),c=t("handle"),f=t(16),u=t("ee"),d=t(15),l=window,p=l.document,h="addEventListener",m="attachEvent",v=l.XMLHttpRequest,w=v&&v.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:v,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var y=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=v&&w&&w[h]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:s,now:a,origin:y,features:{},xhrWrappable:b,userAgent:d};t(12),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(18)},{}]},{},["loader",2,10,4,3]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NBA daily fantasy advanced player stats for FanDuel, DraftKings and Yahoo lineups ...">
+    <meta name="author" content="">
+    <meta name="apple-mobile-web-app-title" content="Swish">
+    <link rel="shortcut icon" href="../../style/assets/img/favicon.png">
+
+    <title>NBA Daily Fantasy Advanced Stats | Swish Analytics </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../style/dist/css/2.0/mlb-optimus-boot.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../style/2.0/injury.css" rel="stylesheet">
+    <link href="../../style/2.0/mlb-optimus.css" rel="stylesheet">
+    <link href="../../style/dist/css/universal.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script src="../../style/dist/js/moment.js"></script>
+    <script src="https://cdn.rawgit.com/mattbradley/livestampjs/master/livestamp.min.js"></script>
+    <script>
+
+	String.prototype.capitalizeFirstLetter = function() {
+	  return this.charAt(0).toUpperCase() + this.slice(1);
+	}
+	function Model(){
+		this.chart;
+		this.site_full = "DraftKings";
+		this.site_short = "dk";
+		this.graph_title = "DraftKings Points";
+		this.graph_subtitle = "2017 Season";
+		this.graph_y_axis_title = 'DK Points';
+		this.graph_point_suffix = 'Pts';
+		this.graph_type = 'fpts_dk';
+		this.graph_view = 'season_graph';
+		this.graph_array_data = [];
+		this.graph_array_games = [];
+		this.players_search = [{"player_id":"606912","name":"Bradley Beal","team_abbr":"WAS","pos":"SG","nickname":"Wizards"},{"player_id":"457576","name":"Jrue Holiday","team_abbr":"NO","pos":"PG","nickname":"Pelicans"},{"player_id":"469218","name":"Paul George","team_abbr":"OKC","pos":"SF","nickname":"Thunder"},{"player_id":"552523","name":"Tobias Harris","team_abbr":"PHI","pos":"SF","nickname":"76ers"},{"player_id":"329525","name":"Kevin Durant","team_abbr":"GS","pos":"SF","nickname":"Warriors"},{"player_id":"229602","name":"P.J. Tucker","team_abbr":"HOU","pos":"PF","nickname":"Rockets"},{"player_id":"395388","name":"James Harden","team_abbr":"HOU","pos":"SG","nickname":"Rockets"},{"player_id":"463121","name":"Damian Lillard","team_abbr":"POR","pos":"PG","nickname":"Trail Blazers"},{"player_id":"462980","name":"Kemba Walker","team_abbr":"CHA","pos":"PG","nickname":"Hornets"},{"player_id":"399725","name":"Blake Griffin","team_abbr":"DET","pos":"PF","nickname":"Pistons"},{"player_id":"886391","name":"Ben Simmons","team_abbr":"PHI","pos":"PG","nickname":"76ers"},{"player_id":"457611","name":"Klay Thompson","team_abbr":"GS","pos":"SG","nickname":"Warriors"},{"player_id":"229738","name":"Trevor Ariza","team_abbr":"WAS","pos":"SF","nickname":"Wizards"},{"player_id":"395365","name":"Justin Holiday","team_abbr":"MEM","pos":"SG","nickname":"Grizzlies"},{"player_id":"522878","name":"CJ McCollum","team_abbr":"POR","pos":"SG","nickname":"Trail Blazers"},{"player_id":"604288","name":"Josh Richardson","team_abbr":"MIA","pos":"SG","nickname":"Heat"},{"player_id":"329468","name":"Mike Conley","team_abbr":"MEM","pos":"PG","nickname":"Grizzlies"},{"player_id":"679478","name":"Steven Adams","team_abbr":"OKC","pos":"C","nickname":"Thunder"},{"player_id":"457594","name":"DeMar DeRozan","team_abbr":"SA","pos":"SG","nickname":"Spurs"},{"player_id":"266554","name":"LaMarcus Aldridge","team_abbr":"SA","pos":"PF","nickname":"Spurs"},{"player_id":"748788","name":"Aaron Gordon","team_abbr":"ORL","pos":"PF","nickname":"Magic"},{"player_id":"853408","name":"Pascal Siakam","team_abbr":"TOR","pos":"PF","nickname":"Raptors"},{"player_id":"659767","name":"Evan Fournier","team_abbr":"ORL","pos":"SG","nickname":"Magic"},{"player_id":"599812","name":"Bojan Bogdanovic","team_abbr":"IND","pos":"SF","nickname":"Pacers"},{"player_id":"393441","name":"Marc Gasol","team_abbr":"TOR","pos":"C","nickname":"Raptors"},{"player_id":"837030","name":"Karl-Anthony Towns","team_abbr":"MIN","pos":"C","nickname":"Timberwolves"},{"player_id":"739960","name":"Rudy Gobert","team_abbr":"UTA","pos":"C","nickname":"Jazz"},{"player_id":"937647","name":"Jayson Tatum","team_abbr":"BOS","pos":"SF","nickname":"Celtics"},{"player_id":"697086","name":"Buddy Hield","team_abbr":"SAC","pos":"SG","nickname":"Kings"},{"player_id":"457598","name":"Nikola Vucevic","team_abbr":"ORL","pos":"C","nickname":"Magic"},{"player_id":"456451","name":"Nicolas Batum","team_abbr":"CHA","pos":"SG","nickname":"Hornets"},{"player_id":"553306","name":"Joe Ingles","team_abbr":"UTA","pos":"SG","nickname":"Jazz"},{"player_id":"794503","name":"Andrew Wiggins","team_abbr":"MIN","pos":"SF","nickname":"Timberwolves"},{"player_id":"699826","name":"Jerami Grant","team_abbr":"OKC","pos":"SF","nickname":"Thunder"},{"player_id":"879707","name":"Donovan Mitchell","team_abbr":"UTA","pos":"PG","nickname":"Jazz"},{"player_id":"1061642","name":"Collin Sexton","team_abbr":"CLE","pos":"PG","nickname":"Cavaliers"},{"player_id":"957489","name":"De'Aaron Fox","team_abbr":"SAC","pos":"PG","nickname":"Kings"},{"player_id":"830650","name":"Nikola Jokic","team_abbr":"DEN","pos":"C","nickname":"Nuggets"},{"player_id":"739957","name":"Giannis Antetokounmpo","team_abbr":"MIL","pos":"PF","nickname":"Bucks"},{"player_id":"329830","name":"Russell Westbrook","team_abbr":"OKC","pos":"PG","nickname":"Thunder"},{"player_id":"794508","name":"Joel Embiid","team_abbr":"PHI","pos":"C","nickname":"76ers"},{"player_id":"329683","name":"Thaddeus Young","team_abbr":"IND","pos":"PF","nickname":"Pacers"},{"player_id":"614746","name":"Andre Drummond","team_abbr":"DET","pos":"C","nickname":"Pistons"},{"player_id":"1060978","name":"Trae Young","team_abbr":"ATL","pos":"PG","nickname":"Hawks"},{"player_id":"844038","name":"D'Angelo Russell","team_abbr":"BKN","pos":"PG","nickname":"Nets"},{"player_id":"743777","name":"Zach LaVine","team_abbr":"CHI","pos":"SG","nickname":"Bulls"},{"player_id":"844476","name":"Kyle Kuzma","team_abbr":"LAL","pos":"SF","nickname":"Lakers"},{"player_id":"1121277","name":"Luka Doncic","team_abbr":"DAL","pos":"PG","nickname":"Mavericks"},{"player_id":"398142","name":"DeAndre Jordan","team_abbr":"NY","pos":"C","nickname":"Knicks"},{"player_id":"891352","name":"Jamal Murray","team_abbr":"DEN","pos":"PG","nickname":"Nuggets"},{"player_id":"552336","name":"Harrison Barnes","team_abbr":"SAC","pos":"SF","nickname":"Kings"},{"player_id":"172643","name":"JJ Redick","team_abbr":"PHI","pos":"SG","nickname":"76ers"},{"player_id":"512053","name":"Khris Middleton","team_abbr":"MIL","pos":"SG","nickname":"Bucks"},{"player_id":"457688","name":"Al-Farouq Aminu","team_abbr":"POR","pos":"PF","nickname":"Trail Blazers"},{"player_id":"699093","name":"Bryn Forbes","team_abbr":"SA","pos":"PG","nickname":"Spurs"},{"player_id":"1061507","name":"Deandre Ayton","team_abbr":"PHO","pos":"C","nickname":"Suns"},{"player_id":"846400","name":"Mikal Bridges","team_abbr":"PHO","pos":"SF","nickname":"Suns"},{"player_id":"842611","name":"Cedi Osman","team_abbr":"CLE","pos":"SF","nickname":"Cavaliers"},{"player_id":"551771","name":"Tim Hardaway Jr.","team_abbr":"DAL","pos":"SG","nickname":"Mavericks"},{"player_id":"295922","name":"Danny Green","team_abbr":"TOR","pos":"SG","nickname":"Raptors"},{"player_id":"509449","name":"Eric Bledsoe","team_abbr":"MIL","pos":"PG","nickname":"Bucks"},{"player_id":"549969","name":"Joe Harris","team_abbr":"BKN","pos":"SG","nickname":"Nets"},{"player_id":"266394","name":"Kyle Lowry","team_abbr":"TOR","pos":"PG","nickname":"Raptors"},{"player_id":"295432","name":"Darren Collison","team_abbr":"IND","pos":"PG","nickname":"Pacers"},{"player_id":"462444","name":"Reggie Jackson","team_abbr":"DET","pos":"PG","nickname":"Pistons"},{"player_id":"329524","name":"D.J. Augustin","team_abbr":"ORL","pos":"PG","nickname":"Magic"},{"player_id":"699950","name":"Willie Cauley-Stein","team_abbr":"SAC","pos":"C","nickname":"Kings"},{"player_id":"330047","name":"Brook Lopez","team_abbr":"MIL","pos":"C","nickname":"Bucks"},{"player_id":"263884","name":"Marvin Williams","team_abbr":"CHA","pos":"PF","nickname":"Hornets"},{"player_id":"338365","name":"Stephen Curry","team_abbr":"GS","pos":"PG","nickname":"Warriors"},{"player_id":"332691","name":"Patrick Beverley","team_abbr":"LAC","pos":"PG","nickname":"Clippers"},{"player_id":"603096","name":"Anthony Davis","team_abbr":"NO","pos":"PF","nickname":"Pelicans"},{"player_id":"456450","name":"Serge Ibaka","team_abbr":"TOR","pos":"PF","nickname":"Raptors"},{"player_id":"263903","name":"Garrett Temple","team_abbr":"LAC","pos":"SG","nickname":"Clippers"},{"player_id":"601146","name":"Malcolm Brogdon","team_abbr":"MIL","pos":"PG","nickname":"Bucks"},{"player_id":"843271","name":"Kelly Oubre Jr.","team_abbr":"PHO","pos":"SF","nickname":"Suns"},{"player_id":"551768","name":"Kyrie Irving","team_abbr":"BOS","pos":"PG","nickname":"Celtics"},{"player_id":"550049","name":"Terrence Ross","team_abbr":"ORL","pos":"SG","nickname":"Magic"},{"player_id":"266367","name":"Jeff Green","team_abbr":"WAS","pos":"SF","nickname":"Wizards"},{"player_id":"458730","name":"Jimmy Butler","team_abbr":"PHI","pos":"SG","nickname":"76ers"},{"player_id":"887665","name":"Brandon Ingram","team_abbr":"LAL","pos":"SF","nickname":"Lakers"},{"player_id":"513607","name":"Avery Bradley","team_abbr":"MEM","pos":"SG","nickname":"Grizzlies"},{"player_id":"552381","name":"Jae Crowder","team_abbr":"UTA","pos":"SF","nickname":"Jazz"},{"player_id":"845564","name":"Devin Booker","team_abbr":"PHO","pos":"SG","nickname":"Suns"},{"player_id":"786412","name":"Julius Randle","team_abbr":"NO","pos":"PF","nickname":"Pelicans"},{"player_id":"697132","name":"Marcus Smart","team_abbr":"BOS","pos":"PG","nickname":"Celtics"},{"player_id":"698651","name":"Montrezl Harrell","team_abbr":"LAC","pos":"C","nickname":"Clippers"},{"player_id":"956574","name":"Jarrett Allen","team_abbr":"BKN","pos":"C","nickname":"Nets"},{"player_id":"551975","name":"Jordan Clarkson","team_abbr":"CLE","pos":"PG","nickname":"Cavaliers"},{"player_id":"552980","name":"Jeremy Lamb","team_abbr":"CHA","pos":"SG","nickname":"Hornets"},{"player_id":"739958","name":"Dennis Schroder","team_abbr":"OKC","pos":"PG","nickname":"Thunder"},{"player_id":"830642","name":"Jusuf Nurkic","team_abbr":"POR","pos":"C","nickname":"Trail Blazers"},{"player_id":"1067856","name":"Shai Gilgeous-Alexander","team_abbr":"LAC","pos":"PG","nickname":"Clippers"},{"player_id":"842298","name":"Justise Winslow","team_abbr":"MIA","pos":"PF","nickname":"Heat"},{"player_id":"552805","name":"Cory Joseph","team_abbr":"IND","pos":"PG","nickname":"Pacers"},{"player_id":"601139","name":"Austin Rivers","team_abbr":"HOU","pos":"SG","nickname":"Rockets"},{"player_id":"401085","name":"Eric Gordon","team_abbr":"HOU","pos":"SG","nickname":"Rockets"},{"player_id":"512591","name":"Kawhi Leonard","team_abbr":"TOR","pos":"SF","nickname":"Raptors"},{"player_id":"456448","name":"Danilo Gallinari","team_abbr":"LAC","pos":"SF","nickname":"Clippers"},{"player_id":"469089","name":"Marcus Morris","team_abbr":"BOS","pos":"PF","nickname":"Celtics"},{"player_id":"503689","name":"Ricky Rubio","team_abbr":"UTA","pos":"PG","nickname":"Jazz"},{"player_id":"1078662","name":"Jaren Jackson Jr.","team_abbr":"MEM","pos":"PF","nickname":"Grizzlies"},{"player_id":"786397","name":"Noah Vonleh","team_abbr":"NY","pos":"PF","nickname":"Knicks"},{"player_id":"830647","name":"Clint Capela","team_abbr":"HOU","pos":"C","nickname":"Rockets"},{"player_id":"606701","name":"Dorian Finney-Smith","team_abbr":"DAL","pos":"SF","nickname":"Mavericks"},{"player_id":"843762","name":"Myles Turner","team_abbr":"IND","pos":"C","nickname":"Pacers"},{"player_id":"295809","name":"Wesley Matthews","team_abbr":"IND","pos":"SG","nickname":"Pacers"},{"player_id":"552335","name":"Reggie Bullock","team_abbr":"LAL","pos":"SF","nickname":"Lakers"},{"player_id":"1067854","name":"Kevin Knox","team_abbr":"NY","pos":"SF","nickname":"Knicks"},{"player_id":"741892","name":"Josh Hart","team_abbr":"LAL","pos":"SG","nickname":"Lakers"},{"player_id":"944164","name":"Josh Jackson","team_abbr":"PHO","pos":"SF","nickname":"Suns"},{"player_id":"944785","name":"Kevin Huerter","team_abbr":"ATL","pos":"SG","nickname":"Hawks"},{"player_id":"741011","name":"Monte Morris","team_abbr":"DEN","pos":"PG","nickname":"Nuggets"},{"player_id":"330057","name":"Taj Gibson","team_abbr":"MIN","pos":"PF","nickname":"Timberwolves"},{"player_id":"697940","name":"Ryan Arcidiacono","team_abbr":"CHI","pos":"PG","nickname":"Bulls"},{"player_id":"795428","name":"DeAndre' Bembry","team_abbr":"ATL","pos":"SF","nickname":"Hawks"},{"player_id":"830641","name":"Dario Saric","team_abbr":"MIN","pos":"PF","nickname":"Timberwolves"},{"player_id":"850111","name":"Domantas Sabonis","team_abbr":"IND","pos":"PF","nickname":"Pacers"},{"player_id":"940823","name":"Jonathan Isaac","team_abbr":"ORL","pos":"PF","nickname":"Magic"},{"player_id":"214152","name":"LeBron James","team_abbr":"LAL","pos":"SF","nickname":"Lakers"},{"player_id":"292401","name":"Lou Williams","team_abbr":"LAC","pos":"SG","nickname":"Clippers"},{"player_id":"280587","name":"Al Horford","team_abbr":"BOS","pos":"C","nickname":"Celtics"},{"player_id":"659772","name":"Tomas Satoransky","team_abbr":"WAS","pos":"PG","nickname":"Wizards"},{"player_id":"411562","name":"Patty Mills","team_abbr":"SA","pos":"PG","nickname":"Spurs"},{"player_id":"879503","name":"Malik Beasley","team_abbr":"DEN","pos":"SG","nickname":"Nuggets"},{"player_id":"946714","name":"Lonzo Ball","team_abbr":"LAL","pos":"PG","nickname":"Lakers"},{"player_id":"883436","name":"Jaylen Brown","team_abbr":"BOS","pos":"SF","nickname":"Celtics"},{"player_id":"477667","name":"Gordon Hayward","team_abbr":"BOS","pos":"SF","nickname":"Celtics"},{"player_id":"602730","name":"Kentavious Caldwell-Pope","team_abbr":"LAL","pos":"SG","nickname":"Lakers"},{"player_id":"602411","name":"Spencer Dinwiddie","team_abbr":"BKN","pos":"PG","nickname":"Nets"},{"player_id":"609256","name":"Otto Porter Jr.","team_abbr":"CHI","pos":"SF","nickname":"Bulls"},{"player_id":"469484","name":"Darius Miller","team_abbr":"NO","pos":"SF","nickname":"Pelicans"},{"player_id":"398424","name":"E'Twaun Moore","team_abbr":"NO","pos":"SG","nickname":"Pelicans"},{"player_id":"603106","name":"Rodney Hood","team_abbr":"POR","pos":"SG","nickname":"Trail Blazers"},{"player_id":"707832","name":"Fred VanVleet","team_abbr":"TOR","pos":"PG","nickname":"Raptors"},{"player_id":"468895","name":"Draymond Green","team_abbr":"GS","pos":"PF","nickname":"Warriors"},{"player_id":"786293","name":"Terry Rozier","team_abbr":"BOS","pos":"PG","nickname":"Celtics"},{"player_id":"660085","name":"T.J. Warren","team_abbr":"PHO","pos":"PF","nickname":"Suns"},{"player_id":"502808","name":"Derrick Favors","team_abbr":"UTA","pos":"PF","nickname":"Jazz"},{"player_id":"266358","name":"Rudy Gay","team_abbr":"SA","pos":"SF","nickname":"Spurs"},{"player_id":"398068","name":"Evan Turner","team_abbr":"POR","pos":"SF","nickname":"Trail Blazers"},{"player_id":"393434","name":"Marco Belinelli","team_abbr":"SA","pos":"SG","nickname":"Spurs"},{"player_id":"506103","name":"Rodney McGruder","team_abbr":"MIA","pos":"SG","nickname":"Heat"},{"player_id":"513234","name":"Hassan Whiteside","team_abbr":"MIA","pos":"C","nickname":"Heat"},{"player_id":"512995","name":"Alec Burks","team_abbr":"SAC","pos":"SG","nickname":"Kings"},{"player_id":"880468","name":"John Collins","team_abbr":"ATL","pos":"C","nickname":"Hawks"},{"player_id":"550431","name":"Nemanja Bjelica","team_abbr":"SAC","pos":"PF","nickname":"Kings"},{"player_id":"830648","name":"Bogdan Bogdanovic","team_abbr":"SAC","pos":"SG","nickname":"Kings"},{"player_id":"603640","name":"Larry Nance Jr.","team_abbr":"CLE","pos":"PF","nickname":"Cavaliers"},{"player_id":"571786","name":"Tyler Johnson","team_abbr":"PHO","pos":"SG","nickname":"Suns"},{"player_id":"697720","name":"Kyle Anderson","team_abbr":"MEM","pos":"SG","nickname":"Grizzlies"},{"player_id":"957486","name":"Bam Adebayo","team_abbr":"MIA","pos":"C","nickname":"Heat"},{"player_id":"1057002","name":"Terrance Ferguson","team_abbr":"OKC","pos":"SF","nickname":"Thunder"},{"player_id":"893100","name":"Landry Shamet","team_abbr":"LAC","pos":"PG","nickname":"Clippers"},{"player_id":"697146","name":"Damyean Dotson","team_abbr":"NY","pos":"SG","nickname":"Knicks"},{"player_id":"237675","name":"Paul Millsap","team_abbr":"DEN","pos":"PF","nickname":"Nuggets"},{"player_id":"606642","name":"Dewayne Dedmon","team_abbr":"ATL","pos":"C","nickname":"Hawks"},{"player_id":"920082","name":"Juancho Hernangomez","team_abbr":"DEN","pos":"PF","nickname":"Nuggets"},{"player_id":"262890","name":"DeMarre Carroll","team_abbr":"BKN","pos":"SF","nickname":"Nets"},{"player_id":"173004","name":"Andre Iguodala","team_abbr":"GS","pos":"SF","nickname":"Warriors"},{"player_id":"477669","name":"Shelvin Mack","team_abbr":"CHA","pos":"PG","nickname":"Hornets"},{"player_id":"61849","name":"Dwyane Wade","team_abbr":"MIA","pos":"SG","nickname":"Heat"},{"player_id":"399612","name":"Derrick Rose","team_abbr":"MIN","pos":"PG","nickname":"Timberwolves"},{"player_id":"510790","name":"Mason Plumlee","team_abbr":"DEN","pos":"C","nickname":"Nuggets"},{"player_id":"949131","name":"Lauri Markkanen","team_abbr":"CHI","pos":"PF","nickname":"Bulls"},{"player_id":"756880","name":"Jabari Parker","team_abbr":"WAS","pos":"PF","nickname":"Wizards"},{"player_id":"525052","name":"Robert Covington","team_abbr":"MIN","pos":"SF","nickname":"Timberwolves"},{"player_id":"846499","name":"Kevon Looney","team_abbr":"GS","pos":"PF","nickname":"Warriors"},{"player_id":"410764","name":"Kent Bazemore","team_abbr":"ATL","pos":"SG","nickname":"Hawks"},{"player_id":"551321","name":"Langston Galloway","team_abbr":"DET","pos":"SG","nickname":"Pistons"},{"player_id":"561589","name":"Torrey Craig","team_abbr":"DEN","pos":"SG","nickname":"Nuggets"},{"player_id":"229598","name":"Chris Paul","team_abbr":"HOU","pos":"PG","nickname":"Rockets"},{"player_id":"292391","name":"Gerald Green","team_abbr":"HOU","pos":"SG","nickname":"Rockets"},{"player_id":"457186","name":"Iman Shumpert","team_abbr":"HOU","pos":"SG","nickname":"Rockets"},{"player_id":"553574","name":"Enes Kanter","team_abbr":"POR","pos":"C","nickname":"Trail Blazers"},{"player_id":"599814","name":"Davis Bertans","team_abbr":"SA","pos":"PF","nickname":"Spurs"},{"player_id":"796009","name":"Derrick White","team_abbr":"SA","pos":"PG","nickname":"Spurs"},{"player_id":"842955","name":"Justin Jackson","team_abbr":"DAL","pos":"SF","nickname":"Mavericks"},{"player_id":"883414","name":"Allonzo Trier","team_abbr":"NY","pos":"SG","nickname":"Knicks"},{"player_id":"553166","name":"Victor Oladipo","team_abbr":"IND","pos":"SG","nickname":"Pacers"},{"player_id":"941460","name":"Josh Okogie","team_abbr":"MIN","pos":"SG","nickname":"Timberwolves"},{"player_id":"942015","name":"Dennis Smith Jr.","team_abbr":"NY","pos":"PG","nickname":"Knicks"},{"player_id":"514882","name":"Kelly Olynyk","team_abbr":"MIA","pos":"C","nickname":"Heat"},{"player_id":"333212","name":"JaVale McGee","team_abbr":"LAL","pos":"C","nickname":"Lakers"},{"player_id":"1060912","name":"Wendell Carter Jr.","team_abbr":"CHI","pos":"C","nickname":"Bulls"},{"player_id":"1076209","name":"Marvin Bagley III","team_abbr":"SAC","pos":"PF","nickname":"Kings"},{"player_id":"604479","name":"Royce O'Neale","team_abbr":"UTA","pos":"SF","nickname":"Jazz"},{"player_id":"509456","name":"John Wall","team_abbr":"WAS","pos":"PG","nickname":"Wizards"},{"player_id":"462458","name":"Ed Davis","team_abbr":"BKN","pos":"PF","nickname":"Nets"},{"player_id":"551787","name":"T.J. McConnell","team_abbr":"PHI","pos":"PG","nickname":"76ers"},{"player_id":"750654","name":"Rondae Hollis-Jefferson","team_abbr":"BKN","pos":"PF","nickname":"Nets"},{"player_id":"957479","name":"Miles Bridges","team_abbr":"CHA","pos":"SF","nickname":"Hornets"},{"player_id":"696209","name":"Taurean Prince","team_abbr":"ATL","pos":"SF","nickname":"Hawks"},{"player_id":"398043","name":"Jeff Teague","team_abbr":"MIN","pos":"PG","nickname":"Timberwolves"},{"player_id":"464841","name":"Tyreke Evans","team_abbr":"IND","pos":"SG","nickname":"Pacers"},{"player_id":"340730","name":"Jeremy Lin","team_abbr":"TOR","pos":"PG","nickname":"Raptors"},{"player_id":"616982","name":"Alex Len","team_abbr":"ATL","pos":"C","nickname":"Hawks"},{"player_id":"877870","name":"Emmanuel Mudiay","team_abbr":"NY","pos":"PG","nickname":"Knicks"},{"player_id":"602028","name":"Cody Zeller","team_abbr":"CHA","pos":"C","nickname":"Hornets"},{"player_id":"520388","name":"Mike Muscala","team_abbr":"LAL","pos":"C","nickname":"Lakers"},{"player_id":"1072048","name":"Maxi Kleber","team_abbr":"DAL","pos":"PF","nickname":"Mavericks"},{"player_id":"552806","name":"Tristan Thompson","team_abbr":"CLE","pos":"C","nickname":"Cavaliers"},{"player_id":"277552","name":"George Hill","team_abbr":"MIL","pos":"PG","nickname":"Bucks"},{"player_id":"744102","name":"Delon Wright","team_abbr":"MEM","pos":"PG","nickname":"Grizzlies"},{"player_id":"955887","name":"Zach Collins","team_abbr":"POR","pos":"PF","nickname":"Trail Blazers"},{"player_id":"603095","name":"Michael Kidd-Gilchrist","team_abbr":"CHA","pos":"SF","nickname":"Hornets"},{"player_id":"844331","name":"Stanley Johnson","team_abbr":"NO","pos":"SF","nickname":"Pelicans"},{"player_id":"698968","name":"Kris Dunn","team_abbr":"CHI","pos":"PG","nickname":"Bulls"},{"player_id":"845596","name":"Trey Lyles","team_abbr":"DEN","pos":"PF","nickname":"Nuggets"},{"player_id":"900535","name":"OG Anunoby","team_abbr":"TOR","pos":"SF","nickname":"Raptors"},{"player_id":"957492","name":"Malik Monk","team_abbr":"CHA","pos":"SG","nickname":"Hornets"},{"player_id":"941834","name":"Bruce Brown Jr.","team_abbr":"DET","pos":"SG","nickname":"Pistons"},{"player_id":"550991","name":"Tony Snell","team_abbr":"MIL","pos":"SG","nickname":"Bucks"},{"player_id":"602135","name":"James Ennis III","team_abbr":"PHI","pos":"SF","nickname":"76ers"},{"player_id":"460833","name":"JaMychal Green","team_abbr":"LAC","pos":"PF","nickname":"Clippers"},{"player_id":"712593","name":"Gary Harris","team_abbr":"DEN","pos":"SG","nickname":"Nuggets"},{"player_id":"503807","name":"Jonas Jerebko","team_abbr":"GS","pos":"PF","nickname":"Warriors"},{"player_id":"552309","name":"Dwight Powell","team_abbr":"DAL","pos":"PF","nickname":"Mavericks"},{"player_id":"58293","name":"Kyle Korver","team_abbr":"UTA","pos":"SG","nickname":"Jazz"},{"player_id":"896601","name":"Thomas Bryant","team_abbr":"WAS","pos":"C","nickname":"Wizards"},{"player_id":"599809","name":"Nikola Mirotic","team_abbr":"MIL","pos":"PF","nickname":"Bucks"},{"player_id":"295941","name":"Wilson Chandler","team_abbr":"LAC","pos":"SF","nickname":"Clippers"},{"player_id":"241712","name":"Jared Dudley","team_abbr":"BKN","pos":"PF","nickname":"Nets"},{"player_id":"330050","name":"Robin Lopez","team_abbr":"CHI","pos":"C","nickname":"Bulls"},{"player_id":"554804","name":"Doug McDermott","team_abbr":"IND","pos":"SF","nickname":"Pacers"},{"player_id":"887914","name":"Jalen Brunson","team_abbr":"DAL","pos":"PG","nickname":"Mavericks"},{"player_id":"469085","name":"Markieff Morris","team_abbr":"OKC","pos":"PF","nickname":"Thunder"},{"player_id":"842297","name":"Tyus Jones","team_abbr":"MIN","pos":"PG","nickname":"Timberwolves"},{"player_id":"463135","name":"Seth Curry","team_abbr":"POR","pos":"PG","nickname":"Trail Blazers"},{"player_id":"840595","name":"Mario Hezonja","team_abbr":"NY","pos":"SG","nickname":"Knicks"},{"player_id":"511057","name":"Lance Stephenson","team_abbr":"LAL","pos":"SF","nickname":"Lakers"},{"player_id":"553548","name":"Jonathon Simmons","team_abbr":"PHI","pos":"SG","nickname":"76ers"},{"player_id":"794506","name":"Wayne Selden Jr.","team_abbr":"CHI","pos":"SG","nickname":"Bulls"},{"player_id":"513606","name":"Tim Frazier","team_abbr":"NO","pos":"PG","nickname":"Pelicans"},{"player_id":"695069","name":"Richaun Holmes","team_abbr":"PHO","pos":"PF","nickname":"Suns"},{"player_id":"846866","name":"Chandler Hutchison","team_abbr":"CHI","pos":"SF","nickname":"Bulls"},{"player_id":"698664","name":"Jake Layman","team_abbr":"POR","pos":"PF","nickname":"Trail Blazers"},{"player_id":"548610","name":"Allen Crabbe","team_abbr":"BKN","pos":"SG","nickname":"Nets"},{"player_id":"3388","name":"Jamal Crawford","team_abbr":"PHO","pos":"SG","nickname":"Suns"},{"player_id":"552982","name":"Shabazz Napier","team_abbr":"BKN","pos":"PG","nickname":"Nets"},{"player_id":"692654","name":"Shaquille Harrison","team_abbr":"CHI","pos":"PG","nickname":"Bulls"},{"player_id":"3508","name":"Tony Parker","team_abbr":"CHA","pos":"PG","nickname":"Hornets"},{"player_id":"1056995","name":"Frank Ntilikina","team_abbr":"NY","pos":"PG","nickname":"Knicks"},{"player_id":"1121334","name":"Rodions Kurucs","team_abbr":"BKN","pos":"SF","nickname":"Nets"},{"player_id":"398034","name":"Mike Scott","team_abbr":"PHI","pos":"PF","nickname":"76ers"},{"player_id":"3230","name":"Vince Carter","team_abbr":"ATL","pos":"SG","nickname":"Hawks"},{"player_id":"398037","name":"James Johnson","team_abbr":"MIA","pos":"SF","nickname":"Heat"},{"player_id":"295799","name":"Dante Cunningham","team_abbr":"SA","pos":"PF","nickname":"Spurs"},{"player_id":"887661","name":"Luke Kennard","team_abbr":"DET","pos":"SG","nickname":"Pistons"},{"player_id":"609843","name":"Moe Harkless","team_abbr":"POR","pos":"SF","nickname":"Trail Blazers"},{"player_id":"399599","name":"Patrick Patterson","team_abbr":"OKC","pos":"PF","nickname":"Thunder"},{"player_id":"844478","name":"Jakob Poeltl","team_abbr":"SA","pos":"C","nickname":"Spurs"},{"player_id":"292396","name":"Ersan Ilyasova","team_abbr":"MIL","pos":"PF","nickname":"Bucks"},{"player_id":"3493","name":"Tyson Chandler","team_abbr":"LAL","pos":"C","nickname":"Lakers"},{"player_id":"552319","name":"Jerian Grant","team_abbr":"ORL","pos":"PG","nickname":"Magic"},{"player_id":"793863","name":"Wes Iwundu","team_abbr":"ORL","pos":"SG","nickname":"Magic"},{"player_id":"605708","name":"Trey Burke","team_abbr":"DAL","pos":"PG","nickname":"Mavericks"},{"player_id":"699947","name":"Nerlens Noel","team_abbr":"OKC","pos":"PF","nickname":"Thunder"},{"player_id":"1121328","name":"Elie Okobo","team_abbr":"PHO","pos":"PG","nickname":"Suns"},{"player_id":"740339","name":"Sterling Brown","team_abbr":"MIL","pos":"SG","nickname":"Bucks"},{"player_id":"1071928","name":"Mohamed Bamba","team_abbr":"ORL","pos":"C","nickname":"Magic"},{"player_id":"1076265","name":"Mitchell Robinson","team_abbr":"NY","pos":"C","nickname":"Knicks"},{"player_id":"553158","name":"Gorgui Dieng","team_abbr":"MIN","pos":"PF","nickname":"Timberwolves"},{"player_id":"550131","name":"Meyers Leonard","team_abbr":"POR","pos":"C","nickname":"Trail Blazers"},{"player_id":"173520","name":"J.J. Barea","team_abbr":"DAL","pos":"PG","nickname":"Mavericks"},{"player_id":"957481","name":"Omari Spellman","team_abbr":"ATL","pos":"PF","nickname":"Hawks"},{"player_id":"698635","name":"Yogi Ferrell","team_abbr":"SAC","pos":"PG","nickname":"Kings"},{"player_id":"920089","name":"Ante Zizic","team_abbr":"CLE","pos":"C","nickname":"Cavaliers"},{"player_id":"531447","name":"Matthew Dellavedova","team_abbr":"CLE","pos":"PG","nickname":"Cavaliers"},{"player_id":"601140","name":"Quinn Cook","team_abbr":"GS","pos":"PG","nickname":"Warriors"},{"player_id":"609861","name":"Norman Powell","team_abbr":"TOR","pos":"SF","nickname":"Raptors"},{"player_id":"698985","name":"Nik Stauskas","team_abbr":"CLE","pos":"SG","nickname":"Cavaliers"},{"player_id":"937667","name":"Frank Jackson","team_abbr":"NO","pos":"PG","nickname":"Pelicans"},{"player_id":"892925","name":"Derrick Jones Jr.","team_abbr":"MIA","pos":"SF","nickname":"Heat"},{"player_id":"329873","name":"Ish Smith","team_abbr":"DET","pos":"PG","nickname":"Pistons"},{"player_id":"509169","name":"Solomon Hill","team_abbr":"NO","pos":"SF","nickname":"Pelicans"},{"player_id":"65820","name":"Devin Harris","team_abbr":"DAL","pos":"PG","nickname":"Mavericks"},{"player_id":"253980","name":"Shaun Livingston","team_abbr":"GS","pos":"PG","nickname":"Warriors"},{"player_id":"750703","name":"Bobby Portis","team_abbr":"WAS","pos":"PF","nickname":"Wizards"},{"player_id":"262882","name":"Rajon Rondo","team_abbr":"LAL","pos":"PG","nickname":"Lakers"},{"player_id":"1066725","name":"Daniel Theis","team_abbr":"BOS","pos":"C","nickname":"Celtics"},{"player_id":"214168","name":"Zaza Pachulia","team_abbr":"DET","pos":"C","nickname":"Pistons"},{"player_id":"946801","name":"De'Anthony Melton","team_abbr":"PHO","pos":"SG","nickname":"Suns"},{"player_id":"567423","name":"Alfonzo McKinnie","team_abbr":"GS","pos":"PF","nickname":"Warriors"},{"player_id":"292394","name":"C.J. Miles","team_abbr":"MEM","pos":"SF","nickname":"Grizzlies"},{"player_id":"920092","name":"Furkan Korkmaz","team_abbr":"PHI","pos":"SG","nickname":"76ers"},{"player_id":"329670","name":"Wayne Ellington","team_abbr":"DET","pos":"SF","nickname":"Pistons"},{"player_id":"601514","name":"Pat Connaughton","team_abbr":"MIL","pos":"SF","nickname":"Bucks"},{"player_id":"599780","name":"Jonas Valanciunas","team_abbr":"MEM","pos":"C","nickname":"Grizzlies"},{"player_id":"830636","name":"Dante Exum","team_abbr":"UTA","pos":"PG","nickname":"Jazz"},{"player_id":"229905","name":"Anthony Tolliver","team_abbr":"MIN","pos":"PF","nickname":"Timberwolves"},{"player_id":"296475","name":"Jose Calderon","team_abbr":"DET","pos":"PG","nickname":"Pistons"},{"player_id":"840567","name":"Willy Hernangomez","team_abbr":"CHA","pos":"C","nickname":"Hornets"},{"player_id":"692110","name":"Danuel House Jr.","team_abbr":"HOU","pos":"SG","nickname":"Rockets"},{"player_id":"920093","name":"Ivica Zubac","team_abbr":"LAC","pos":"C","nickname":"Clippers"},{"player_id":"842301","name":"Jahlil Okafor","team_abbr":"NO","pos":"C","nickname":"Pelicans"},{"player_id":"937650","name":"Harry Giles","team_abbr":"SAC","pos":"PF","nickname":"Kings"},{"player_id":"691518","name":"Sam Dekker","team_abbr":"WAS","pos":"SF","nickname":"Wizards"},{"player_id":"886386","name":"Antonio Blakeney","team_abbr":"CHI","pos":"PG","nickname":"Bulls"},{"player_id":"608661","name":"Elfrid Payton","team_abbr":"NO","pos":"PG","nickname":"Pelicans"},{"player_id":"504523","name":"Ian Clark","team_abbr":"NO","pos":"SG","nickname":"Pelicans"},{"player_id":"743701","name":"Jordan Bell","team_abbr":"GS","pos":"PF","nickname":"Warriors"},{"player_id":"698991","name":"Caris LeVert","team_abbr":"BKN","pos":"SF","nickname":"Nets"},{"player_id":"787141","name":"David Nwaba","team_abbr":"CLE","pos":"SG","nickname":"Cavaliers"},{"player_id":"551760","name":"Will Barton","team_abbr":"DEN","pos":"SG","nickname":"Nuggets"},{"player_id":"411111","name":"Kenneth Faried","team_abbr":"HOU","pos":"PF","nickname":"Rockets"},{"player_id":"843997","name":"D.J. Wilson","team_abbr":"MIL","pos":"PF","nickname":"Bucks"},{"player_id":"842169","name":"Gary Clark","team_abbr":"HOU","pos":"SF","nickname":"Rockets"},{"player_id":"970444","name":"Hamidou Diallo","team_abbr":"OKC","pos":"SG","nickname":"Thunder"},{"player_id":"296379","name":"Aron Baynes","team_abbr":"BOS","pos":"C","nickname":"Celtics"},{"player_id":"887902","name":"Cheick Diallo","team_abbr":"NO","pos":"PF","nickname":"Pelicans"},{"player_id":"609818","name":"Treveon Graham","team_abbr":"BKN","pos":"SF","nickname":"Nets"},{"player_id":"599797","name":"Bismack Biyombo","team_abbr":"CHA","pos":"C","nickname":"Hornets"},{"player_id":"329544","name":"Wesley Johnson","team_abbr":"WAS","pos":"SF","nickname":"Wizards"},{"player_id":"920067","name":"Thon Maker","team_abbr":"DET","pos":"C","nickname":"Pistons"},{"player_id":"707852","name":"Tyrone Wallace","team_abbr":"LAC","pos":"SG","nickname":"Clippers"},{"player_id":"745923","name":"Luke Kornet","team_abbr":"NY","pos":"PF","nickname":"Knicks"},{"player_id":"553331","name":"Boban Marjanovic","team_abbr":"PHI","pos":"C","nickname":"76ers"},{"player_id":"891346","name":"Isaiah Briscoe","team_abbr":"ORL","pos":"PG","nickname":"Magic"},{"player_id":"263220","name":"Joakim Noah","team_abbr":"MEM","pos":"C","nickname":"Grizzlies"},{"player_id":"552007","name":"Dion Waiters","team_abbr":"MIA","pos":"SG","nickname":"Heat"},{"player_id":"843742","name":"Kenrich Williams","team_abbr":"NO","pos":"SF","nickname":"Pelicans"},{"player_id":"603948","name":"Chasson Randle","team_abbr":"WAS","pos":"PG","nickname":"Wizards"},{"player_id":"292393","name":"Ian Mahinmi","team_abbr":"WAS","pos":"C","nickname":"Wizards"},{"player_id":"792415","name":"Semi Ojeleye","team_abbr":"BOS","pos":"PF","nickname":"Celtics"},{"player_id":"699941","name":"Jaron Blossomgame","team_abbr":"CLE","pos":"SF","nickname":"Cavaliers"},{"player_id":"698979","name":"Glenn Robinson III","team_abbr":"DET","pos":"SG","nickname":"Pistons"},{"player_id":"884087","name":"Aaron Holiday","team_abbr":"IND","pos":"PG","nickname":"Pacers"},{"player_id":"843265","name":"Svi Mykhailiuk","team_abbr":"DET","pos":"SG","nickname":"Pistons"},{"player_id":"946824","name":"Markelle Fultz","team_abbr":"ORL","pos":"PG","nickname":"Magic"},{"player_id":"329890","name":"Lance Thomas","team_abbr":"NY","pos":"SF","nickname":"Knicks"},{"player_id":"456456","name":"Goran Dragic","team_abbr":"MIA","pos":"PG","nickname":"Heat"},{"player_id":"745922","name":"Damian Jones","team_abbr":"GS","pos":"C","nickname":"Warriors"},{"player_id":"843228","name":"Devonte' Graham","team_abbr":"CHA","pos":"PG","nickname":"Hornets"},{"player_id":"610597","name":"Abdel Nader","team_abbr":"OKC","pos":"PF","nickname":"Thunder"},{"player_id":"395391","name":"Jerryd Bayless","team_abbr":"MIN","pos":"PG","nickname":"Timberwolves"},{"player_id":"168013","name":"Nene Hilario","team_abbr":"HOU","pos":"C","nickname":"Rockets"},{"player_id":"794504","name":"Frank Mason III","team_abbr":"SAC","pos":"PG","nickname":"Kings"},{"player_id":"513526","name":"Troy Daniels","team_abbr":"PHO","pos":"SG","nickname":"Suns"},{"player_id":"839018","name":"Cristiano Felicio","team_abbr":"CHI","pos":"C","nickname":"Bulls"},{"player_id":"843794","name":"Jevon Carter","team_abbr":"MEM","pos":"PG","nickname":"Grizzlies"},{"player_id":"398066","name":"Kosta Koufos","team_abbr":"SAC","pos":"C","nickname":"Kings"},{"player_id":"846504","name":"Jonah Bolden","team_abbr":"PHI","pos":"PF","nickname":"76ers"},{"player_id":"883438","name":"Ivan Rabb","team_abbr":"MEM","pos":"PF","nickname":"Grizzlies"},{"player_id":"229569","name":"Luol Deng","team_abbr":"MIN","pos":"SF","nickname":"Timberwolves"},{"player_id":"887915","name":"Donte DiVincenzo","team_abbr":"MIL","pos":"SG","nickname":"Bucks"},{"player_id":"292407","name":"Amir Johnson","team_abbr":"PHI","pos":"PF","nickname":"76ers"},{"player_id":"398090","name":"Jon Leuer","team_abbr":"DET","pos":"PF","nickname":"Pistons"},{"player_id":"601518","name":"Khem Birch","team_abbr":"ORL","pos":"PF","nickname":"Magic"},{"player_id":"854601","name":"Dillon Brooks","team_abbr":"MEM","pos":"SG","nickname":"Grizzlies"},{"player_id":"3234","name":"Dirk Nowitzki","team_abbr":"DAL","pos":"PF","nickname":"Mavericks"},{"player_id":"920066","name":"Dragan Bender","team_abbr":"PHO","pos":"PF","nickname":"Suns"},{"player_id":"946720","name":"TJ Leaf","team_abbr":"IND","pos":"PF","nickname":"Pacers"},{"player_id":"3494","name":"Pau Gasol","team_abbr":"SA","pos":"C","nickname":"Spurs"},{"player_id":"679381","name":"Georges Niang","team_abbr":"UTA","pos":"PF","nickname":"Jazz"},{"player_id":"509450","name":"DeMarcus Cousins","team_abbr":"GS","pos":"PF","nickname":"Warriors"},{"player_id":"329187","name":"Thabo Sefolosha","team_abbr":"UTA","pos":"SF","nickname":"Jazz"},{"player_id":"786399","name":"Troy Williams","team_abbr":"SAC","pos":"SG","nickname":"Kings"},{"player_id":"739966","name":"Raul Neto","team_abbr":"UTA","pos":"PG","nickname":"Jazz"},{"player_id":"329715","name":"Ryan Anderson","team_abbr":"MIA","pos":"PF","nickname":"Heat"},{"player_id":"606731","name":"Frank Kaminsky","team_abbr":"CHA","pos":"PF","nickname":"Hornets"},{"player_id":"842296","name":"Grayson Allen","team_abbr":"UTA","pos":"SG","nickname":"Jazz"},{"player_id":"65871","name":"Channing Frye","team_abbr":"CLE","pos":"PF","nickname":"Cavaliers"},{"player_id":"883564","name":"Tyler Dorsey","team_abbr":"MEM","pos":"PG","nickname":"Grizzlies"},{"player_id":"879502","name":"Dwayne Bacon","team_abbr":"CHA","pos":"SG","nickname":"Hornets"},{"player_id":"483372","name":"Kyle O'Quinn","team_abbr":"IND","pos":"PF","nickname":"Pacers"},{"player_id":"744245","name":"Jarell Martin","team_abbr":"ORL","pos":"PF","nickname":"Magic"},{"player_id":"745904","name":"Sindarius Thornwell","team_abbr":"LAC","pos":"SG","nickname":"Clippers"},{"player_id":"830646","name":"Bruno Caboclo","team_abbr":"MEM","pos":"SF","nickname":"Grizzlies"},{"player_id":"402376","name":"Brad Wanamaker","team_abbr":"BOS","pos":"PG","nickname":"Celtics"},{"player_id":"697982","name":"Justin Anderson","team_abbr":"ATL","pos":"SF","nickname":"Hawks"},{"player_id":"699951","name":"Alex Poythress","team_abbr":"ATL","pos":"SF","nickname":"Hawks"},{"player_id":"329825","name":"Quincy Pondexter","team_abbr":"SA","pos":"SF","nickname":"Spurs"},{"player_id":"253975","name":"Dwight Howard","team_abbr":"WAS","pos":"C","nickname":"Wizards"},{"player_id":"884141","name":"Marquese Chriss","team_abbr":"CLE","pos":"PF","nickname":"Cavaliers"},{"player_id":"844150","name":"Kadeem Allen","team_abbr":"NY","pos":"SG","nickname":"Knicks"},{"player_id":"1057004","name":"Isaiah Hartenstein","team_abbr":"HOU","pos":"PF","nickname":"Rockets"},{"player_id":"893002","name":"Jerome Robinson","team_abbr":"LAC","pos":"SG","nickname":"Clippers"},{"player_id":"920091","name":"Timothe Luwawu-Cabarrot","team_abbr":"CHI","pos":"SG","nickname":"Bulls"},{"player_id":"507632","name":"Ryan Broekhoff","team_abbr":"DAL","pos":"SF","nickname":"Mavericks"},{"player_id":"253997","name":"J.R. Smith","team_abbr":"CLE","pos":"SG","nickname":"Cavaliers"},{"player_id":"174063","name":"Raymond Felton","team_abbr":"OKC","pos":"PG","nickname":"Thunder"},{"player_id":"609081","name":"Damion Lee","team_abbr":"GS","pos":"SG","nickname":"Warriors"},{"player_id":"276755","name":"Courtney Lee","team_abbr":"DAL","pos":"SG","nickname":"Mavericks"},{"player_id":"1082704","name":"Troy Brown","team_abbr":"WAS","pos":"SF","nickname":"Wizards"},{"player_id":"395374","name":"Kevin Love","team_abbr":"CLE","pos":"PF","nickname":"Cavaliers"},{"player_id":"553575","name":"Brandon Knight","team_abbr":"CLE","pos":"SG","nickname":"Cavaliers"},{"player_id":"954390","name":"Robert Williams","team_abbr":"BOS","pos":"PF","nickname":"Celtics"},{"player_id":"741886","name":"Deonte Burton","team_abbr":"OKC","pos":"SF","nickname":"Thunder"},{"player_id":"331197","name":"Ekpe Udoh","team_abbr":"UTA","pos":"C","nickname":"Jazz"},{"player_id":"847005","name":"Patrick McCaw","team_abbr":"TOR","pos":"SG","nickname":"Raptors"},{"player_id":"502871","name":"John Henson","team_abbr":"CLE","pos":"C","nickname":"Cavaliers"},{"player_id":"467271","name":"Miles Plumlee","team_abbr":"ATL","pos":"C","nickname":"Hawks"},{"player_id":"920087","name":"Guerschon Yabusele","team_abbr":"BOS","pos":"PF","nickname":"Celtics"},{"player_id":"552530","name":"Jordan McRae","team_abbr":"WAS","pos":"SG","nickname":"Wizards"},{"player_id":"263894","name":"Jason Smith","team_abbr":"NO","pos":"PF","nickname":"Pelicans"},{"player_id":"843846","name":"Edmond Sumner","team_abbr":"IND","pos":"PG","nickname":"Pacers"},{"player_id":"842910","name":"Theo Pinson","team_abbr":"BKN","pos":"SF","nickname":"Nets"},{"player_id":"555263","name":"Salah Mejri","team_abbr":"DAL","pos":"C","nickname":"Mavericks"},{"player_id":"880784","name":"Khyri Thomas","team_abbr":"DET","pos":"SG","nickname":"Pistons"},{"player_id":"879705","name":"Deng Adel","team_abbr":"CLE","pos":"C","nickname":"Cavaliers"},{"player_id":"882387","name":"Moritz Wagner","team_abbr":"LAL","pos":"PF","nickname":"Lakers"},{"player_id":"263217","name":"Corey Brewer","team_abbr":"SAC","pos":"SG","nickname":"Kings"},{"player_id":"882772","name":"Caleb Swanigan","team_abbr":"SAC","pos":"PF","nickname":"Kings"},{"player_id":"884121","name":"Chimezie Metu","team_abbr":"SA","pos":"PF","nickname":"Spurs"},{"player_id":"748529","name":"Johnathan Motley","team_abbr":"LAC","pos":"SF","nickname":"Clippers"},{"player_id":"879492","name":"Shake Milton","team_abbr":"PHI","pos":"PG","nickname":"76ers"},{"player_id":"891349","name":"Skal Labissiere","team_abbr":"POR","pos":"PF","nickname":"Trail Blazers"},{"player_id":"602264","name":"Julian Washburn","team_abbr":"MEM","pos":"SF","nickname":"Grizzlies"},{"player_id":"846639","name":"Yuta Watanabe","team_abbr":"MEM","pos":"SG","nickname":"Grizzlies"},{"player_id":"892735","name":"Jacob Evans III","team_abbr":"GS","pos":"SG","nickname":"Warriors"},{"player_id":"901190","name":"Chris Boucher","team_abbr":"TOR","pos":"PF","nickname":"Raptors"},{"player_id":"891079","name":"Tyler Lydon","team_abbr":"DEN","pos":"PF","nickname":"Nuggets"},{"player_id":"745852","name":"Johnathan Williams","team_abbr":"LAL","pos":"PF","nickname":"Lakers"},{"player_id":"400599","name":"Chandler Parsons","team_abbr":"MEM","pos":"SF","nickname":"Grizzlies"},{"player_id":"883573","name":"Drew Eubanks","team_abbr":"SA","pos":"PF","nickname":"Spurs"},{"player_id":"846840","name":"Jaylen Adams","team_abbr":"ATL","pos":"PG","nickname":"Hawks"},{"player_id":"457224","name":"C.J. Williams","team_abbr":"MIN","pos":"SG","nickname":"Timberwolves"},{"player_id":"846793","name":"Jared Terrell","team_abbr":"MIN","pos":"PG","nickname":"Timberwolves"},{"player_id":"880681","name":"Jawun Evans","team_abbr":"PHO","pos":"PG","nickname":"Suns"},{"player_id":"844045","name":"Keita Bates-Diop","team_abbr":"MIN","pos":"SF","nickname":"Timberwolves"},{"player_id":"295436","name":"Luc Richard Mbah a Moute","team_abbr":"LAC","pos":"SF","nickname":"Clippers"},{"player_id":"1121307","name":"Anfernee Simons","team_abbr":"POR","pos":"SG","nickname":"Trail Blazers"},{"player_id":"509472","name":"John Jenkins","team_abbr":"NY","pos":"SG","nickname":"Knicks"},{"player_id":"1060928","name":"Lonnie Walker IV","team_abbr":"SA","pos":"SG","nickname":"Spurs"},{"player_id":"795361","name":"Brandon Goodwin","team_abbr":"DEN","pos":"PG","nickname":"Nuggets"},{"player_id":"891151","name":"Marcus Derrickson","team_abbr":"GS","pos":"PF","nickname":"Warriors"},{"player_id":"457605","name":"Isaiah Thomas","team_abbr":"DEN","pos":"PG","nickname":"Nuggets"},{"player_id":"750924","name":"Christian Wood","team_abbr":"MIL","pos":"PF","nickname":"Bucks"},{"player_id":"854591","name":"Duncan Robinson","team_abbr":"MIA","pos":"PF","nickname":"Heat"},{"player_id":"679379","name":"Nazareth Mitrou-Long","team_abbr":"UTA","pos":"PG","nickname":"Jazz"},{"player_id":"1060908","name":"Gary Trent Jr.","team_abbr":"POR","pos":"SG","nickname":"Trail Blazers"},{"player_id":"617391","name":"Jordan Loyd","team_abbr":"TOR","pos":"PG","nickname":"Raptors"},{"player_id":"1121322","name":"Dzanan Musa","team_abbr":"BKN","pos":"SF","nickname":"Nets"},{"player_id":"846503","name":"Thomas Welsh","team_abbr":"DEN","pos":"C","nickname":"Nuggets"},{"player_id":"845531","name":"Devin Robinson","team_abbr":"WAS","pos":"SG","nickname":"Wizards"},{"player_id":"953283","name":"Alize Johnson","team_abbr":"IND","pos":"PF","nickname":"Pacers"},{"player_id":"887593","name":"Melvin Frazier","team_abbr":"ORL","pos":"SF","nickname":"Magic"},{"player_id":"1121333","name":"Isaac Bonga","team_abbr":"LAL","pos":"SF","nickname":"Lakers"},{"player_id":"886385","name":"Brandon Sampson","team_abbr":"CHI","pos":"PG","nickname":"Bulls"},{"player_id":"882284","name":"Henry Ellenson","team_abbr":"NY","pos":"PF","nickname":"Knicks"},{"player_id":"1122290","name":"Emanuel Terry","team_abbr":"MIA","pos":"PF","nickname":"Heat"},{"player_id":"697644","name":"Alex Caruso","team_abbr":"LAL","pos":"SG","nickname":"Lakers"},{"player_id":"740382","name":"Davon Reed","team_abbr":"IND","pos":"SG","nickname":"Pacers"},{"player_id":"660092","name":"Tyler Cavanaugh","team_abbr":"UTA","pos":"PF","nickname":"Jazz"},{"player_id":"696290","name":"Amile Jefferson","team_abbr":"ORL","pos":"PF","nickname":"Magic"},{"player_id":"1067852","name":"Jarred Vanderbilt","team_abbr":"DEN","pos":"SF","nickname":"Nuggets"},{"player_id":"607118","name":"Alan Williams","team_abbr":"BKN","pos":"C","nickname":"Nets"},{"player_id":"329862","name":"Jodie Meeks","team_abbr":"TOR","pos":"SG","nickname":"Raptors"},{"player_id":"844084","name":"Vincent Edwards","team_abbr":"HOU","pos":"SF","nickname":"Rockets"},{"player_id":"226806","name":"Udonis Haslem","team_abbr":"MIA","pos":"PF","nickname":"Heat"},{"player_id":"843844","name":"J.P. Macura","team_abbr":"CHA","pos":"SG","nickname":"Hornets"},{"player_id":"843837","name":"Angel Delgado","team_abbr":"LAC","pos":"C","nickname":"Clippers"},{"player_id":"886448","name":"PJ Dozier","team_abbr":"BOS","pos":"PG","nickname":"Celtics"},{"player_id":"950065","name":"Tony Bradley","team_abbr":"UTA","pos":"C","nickname":"Jazz"},{"player_id":"1083019","name":"Haywood Highsmith","team_abbr":"PHI","pos":"SG","nickname":"76ers"},{"player_id":"793269","name":"Troy Caupain","team_abbr":"ORL","pos":"SG","nickname":"Magic"},{"player_id":"793598","name":"Joe Chealey","team_abbr":"CHA","pos":"PG","nickname":"Hornets"},{"player_id":"946927","name":"Daryl Macon","team_abbr":"DAL","pos":"PG","nickname":"Mavericks"},{"player_id":"949117","name":"Rawle Alkins","team_abbr":"CHI","pos":"SG","nickname":"Bulls"},{"player_id":"401097","name":"Kalin Lucas","team_abbr":"DET","pos":"PG","nickname":"Pistons"},{"player_id":"742864","name":"George King","team_abbr":"PHO","pos":"SG","nickname":"Suns"},{"player_id":"1060907","name":"Trevon Duval","team_abbr":"MIL","pos":"PG","nickname":"Bucks"},{"player_id":"792300","name":"Isaiah Hicks","team_abbr":"NY","pos":"PF","nickname":"Knicks"},{"player_id":"842287","name":"Donte Grantham","team_abbr":"OKC","pos":"SG","nickname":"Thunder"},{"player_id":"879703","name":"Ray Spalding","team_abbr":"PHO","pos":"PF","nickname":"Suns"},{"player_id":"740342","name":"Ben Moore","team_abbr":"SA","pos":"SF","nickname":"Spurs"},{"player_id":"552401","name":"Jordan Sibert","team_abbr":"ATL","pos":"SG","nickname":"Hawks"},{"player_id":"884168","name":"Dejounte Murray","team_abbr":"SA","pos":"PG","nickname":"Spurs"},{"player_id":"843840","name":"Trevon Bluiett","team_abbr":"NO","pos":"PG","nickname":"Pelicans"},{"player_id":"842994","name":"Bonzie Colson","team_abbr":"MIL","pos":"SF","nickname":"Bucks"},{"player_id":"877869","name":"Kristaps Porzingis","team_abbr":"DAL","pos":"PF","nickname":"Mavericks"},{"player_id":"957490","name":"Wenyen Gabriel","team_abbr":"SAC","pos":"PF","nickname":"Kings"},{"player_id":"553573","name":"Terrence Jones","team_abbr":"HOU","pos":"PF","nickname":"Rockets"},{"player_id":"548619","name":"Richard Solomon","team_abbr":"OKC","pos":"PF","nickname":"Thunder"},{"player_id":"950367","name":"Kostas Antetokounmpo","team_abbr":"DAL","pos":"SF","nickname":"Mavericks"},{"player_id":"548635","name":"Andre Roberson","team_abbr":"OKC","pos":"SF","nickname":"Thunder"},{"player_id":"461025","name":"Scotty Hopson","team_abbr":"OKC","pos":"SG","nickname":"Thunder"},{"player_id":"552679","name":"Timofey Mozgov","team_abbr":"ORL","pos":"C","nickname":"Magic"},{"player_id":"843834","name":"Isaiah Whitehead","team_abbr":"DET","pos":"PG","nickname":"Pistons"},{"player_id":"1078666","name":"Zhaire Smith","team_abbr":"PHI","pos":"SG","nickname":"76ers"},{"player_id":"603959","name":"Malcolm Miller","team_abbr":"TOR","pos":"PF","nickname":"Raptors"},{"player_id":"845512","name":"Chris Chiozza","team_abbr":"HOU","pos":"PG","nickname":"Rockets"},{"player_id":"691716","name":"R.J. Hunter","team_abbr":"BOS","pos":"SG","nickname":"Celtics"},{"player_id":"880782","name":"Justin Patton","team_abbr":"PHI","pos":"C","nickname":"76ers"},{"player_id":"845554","name":"Yante Maten","team_abbr":"MIA","pos":"SF","nickname":"Heat"},{"player_id":"712595","name":"Denzel Valentine","team_abbr":"CHI","pos":"SG","nickname":"Bulls"},{"player_id":"1061724","name":"Michael Porter Jr.","team_abbr":"DEN","pos":"SF","nickname":"Nuggets"}];
+		this.matched_players = [];
+		this.season_graph = [{"game":"vs BKN 2\/23","fpts_fd":"10.9","fpts_dk":"12.5","fpts_ya":"10.9","fppm_fd":"0.42","fppm_dk":"0.48","fppm_ya":"0.42","minutes_played":"26"},{"game":"vs WAS 2\/22","fpts_fd":"14.7","fpts_dk":"15.0","fpts_ya":"14.7","fppm_fd":"0.86","fppm_dk":"0.88","fppm_ya":"0.86","minutes_played":"17"},{"game":"@ ORL 2\/14","fpts_fd":"2.4","fpts_dk":"2.5","fpts_ya":"2.4","fppm_fd":"0.17","fppm_dk":"0.18","fppm_ya":"0.17","minutes_played":"14"},{"game":"@ IND 2\/11","fpts_fd":"5.2","fpts_dk":"5.3","fpts_ya":"5.2","fppm_fd":"0.35","fppm_dk":"0.35","fppm_ya":"0.35","minutes_played":"15"},{"game":"@ ATL 2\/9","fpts_fd":"20.1","fpts_dk":"19.3","fpts_ya":"20.1","fppm_fd":"0.69","fppm_dk":"0.66","fppm_ya":"0.69","minutes_played":"29"},{"game":"@ DAL 2\/6","fpts_fd":"7.1","fpts_dk":"6.8","fpts_ya":"7.1","fppm_fd":"0.55","fppm_dk":"0.52","fppm_ya":"0.55","minutes_played":"13"},{"game":"vs LAC 2\/5","fpts_fd":"9.9","fpts_dk":"9.0","fpts_ya":"9.9","fppm_fd":"0.52","fppm_dk":"0.47","fppm_ya":"0.52","minutes_played":"19"},{"game":"vs CHI 2\/2","fpts_fd":"13.4","fpts_dk":"13.5","fpts_ya":"13.4","fppm_fd":"0.58","fppm_dk":"0.59","fppm_ya":"0.58","minutes_played":"23"},{"game":"vs MEM 2\/1","fpts_fd":"20.8","fpts_dk":"19.0","fpts_ya":"20.8","fppm_fd":"0.83","fppm_dk":"0.76","fppm_ya":"0.83","minutes_played":"25"},{"game":"@ BOS 1\/30","fpts_fd":"13.2","fpts_dk":"12.3","fpts_ya":"13.2","fppm_fd":"0.69","fppm_dk":"0.64","fppm_ya":"0.69","minutes_played":"19"},{"game":"vs NY 1\/28","fpts_fd":"11.6","fpts_dk":"10.8","fpts_ya":"11.6","fppm_fd":"1.16","fppm_dk":"1.08","fppm_ya":"1.16","minutes_played":"10"},{"game":"@ MIL 1\/25","fpts_fd":"31.4","fpts_dk":"30.8","fpts_ya":"31.4","fppm_fd":"1.21","fppm_dk":"1.18","fppm_ya":"1.21","minutes_played":"26"},{"game":"@ MEM 1\/23","fpts_fd":"9.6","fpts_dk":"10.8","fpts_ya":"9.6","fppm_fd":"0.48","fppm_dk":"0.54","fppm_ya":"0.48","minutes_played":"20"},{"game":"@ IND 1\/20","fpts_fd":"8.4","fpts_dk":"9.5","fpts_ya":"8.4","fppm_fd":"0.47","fppm_dk":"0.53","fppm_ya":"0.47","minutes_played":"18"},{"game":"vs PHO 1\/19","fpts_fd":"16.6","fpts_dk":"15.8","fpts_ya":"16.6","fppm_fd":"0.69","fppm_dk":"0.66","fppm_ya":"0.69","minutes_played":"24"},{"game":"vs SAC 1\/17","fpts_fd":"24.9","fpts_dk":"23.0","fpts_ya":"24.9","fppm_fd":"0.83","fppm_dk":"0.77","fppm_ya":"0.83","minutes_played":"30"},{"game":"@ SA 1\/14","fpts_fd":"14.9","fpts_dk":"15.3","fpts_ya":"14.9","fppm_fd":"0.60","fppm_dk":"0.61","fppm_ya":"0.60","minutes_played":"25"},{"game":"@ SAC 1\/12","fpts_fd":"27.4","fpts_dk":"25.8","fpts_ya":"27.4","fppm_fd":"1.05","fppm_dk":"0.99","fppm_ya":"1.05","minutes_played":"26"},{"game":"@ POR 1\/11","fpts_fd":"10.1","fpts_dk":"10.3","fpts_ya":"10.1","fppm_fd":"0.56","fppm_dk":"0.57","fppm_ya":"0.56","minutes_played":"18"},{"game":"@ LAC 1\/8","fpts_fd":"12.2","fpts_dk":"11.8","fpts_ya":"12.2","fppm_fd":"0.64","fppm_dk":"0.62","fppm_ya":"0.64","minutes_played":"19"},{"game":"@ PHO 1\/6","fpts_fd":"12.4","fpts_dk":"12.0","fpts_ya":"12.4","fppm_fd":"0.78","fppm_dk":"0.75","fppm_ya":"0.78","minutes_played":"16"},{"game":"@ DEN 1\/5","fpts_fd":"16.0","fpts_dk":"16.3","fpts_ya":"16.0","fppm_fd":"1.00","fppm_dk":"1.02","fppm_ya":"1.00","minutes_played":"16"},{"game":"vs DAL 1\/2","fpts_fd":"7.5","fpts_dk":"7.5","fpts_ya":"7.5","fppm_fd":"0.54","fppm_dk":"0.54","fppm_ya":"0.54","minutes_played":"14"},{"game":"vs ORL 12\/31","fpts_fd":"10.4","fpts_dk":"9.5","fpts_ya":"10.4","fppm_fd":"0.52","fppm_dk":"0.48","fppm_ya":"0.52","minutes_played":"20"},{"game":"@ WAS 12\/29","fpts_fd":"21.2","fpts_dk":"20.5","fpts_ya":"21.2","fppm_fd":"0.79","fppm_dk":"0.76","fppm_ya":"0.79","minutes_played":"27"},{"game":"vs BKN 12\/28","fpts_fd":"9.2","fpts_dk":"9.0","fpts_ya":"9.2","fppm_fd":"0.66","fppm_dk":"0.64","fppm_ya":"0.66","minutes_played":"14"},{"game":"@ BKN 12\/26","fpts_fd":"9.1","fpts_dk":"10.8","fpts_ya":"9.1","fppm_fd":"0.61","fppm_dk":"0.72","fppm_ya":"0.61","minutes_played":"15"},{"game":"@ BOS 12\/23","fpts_fd":"10.4","fpts_dk":"10.5","fpts_ya":"10.4","fppm_fd":"0.58","fppm_dk":"0.58","fppm_ya":"0.58","minutes_played":"18"},{"game":"vs DET 12\/21","fpts_fd":"23.0","fpts_dk":"21.8","fpts_ya":"23.0","fppm_fd":"1.00","fppm_dk":"0.95","fppm_ya":"1.00","minutes_played":"23"},{"game":"vs CLE 12\/19","fpts_fd":"35.6","fpts_dk":"32.5","fpts_ya":"35.6","fppm_fd":"1.78","fppm_dk":"1.63","fppm_ya":"1.78","minutes_played":"20"},{"game":"vs LAL 12\/15","fpts_fd":"9.1","fpts_dk":"8.8","fpts_ya":"9.1","fppm_fd":"0.91","fppm_dk":"0.88","fppm_ya":"0.91","minutes_played":"10"},{"game":"vs NY 12\/14","fpts_fd":"8.8","fpts_dk":"9.5","fpts_ya":"8.8","fppm_fd":"0.55","fppm_dk":"0.59","fppm_ya":"0.55","minutes_played":"16"},{"game":"@ NY 12\/9","fpts_fd":"18.3","fpts_dk":"17.5","fpts_ya":"18.3","fppm_fd":"0.80","fppm_dk":"0.76","fppm_ya":"0.80","minutes_played":"23"},{"game":"vs DEN 12\/7","fpts_fd":"15.0","fpts_dk":"14.3","fpts_ya":"15.0","fppm_fd":"1.00","fppm_dk":"0.95","fppm_ya":"1.00","minutes_played":"15"},{"game":"@ MIN 12\/5","fpts_fd":"16.0","fpts_dk":"16.8","fpts_ya":"16.0","fppm_fd":"0.70","fppm_dk":"0.73","fppm_ya":"0.70","minutes_played":"23"},{"game":"vs NO 12\/2","fpts_fd":"24.1","fpts_dk":"21.8","fpts_ya":"24.1","fppm_fd":"1.21","fppm_dk":"1.09","fppm_ya":"1.21","minutes_played":"20"},{"game":"vs UTA 11\/30","fpts_fd":"13.4","fpts_dk":"14.0","fpts_ya":"13.4","fppm_fd":"0.56","fppm_dk":"0.58","fppm_ya":"0.56","minutes_played":"24"},{"game":"vs ATL 11\/28","fpts_fd":"22.7","fpts_dk":"21.0","fpts_ya":"22.7","fppm_fd":"1.42","fppm_dk":"1.31","fppm_ya":"1.42","minutes_played":"16"},{"game":"vs MIL 11\/26","fpts_fd":"24.9","fpts_dk":"23.3","fpts_ya":"24.9","fppm_fd":"1.38","fppm_dk":"1.29","fppm_ya":"1.38","minutes_played":"18"},{"game":"@ DET 11\/11","fpts_fd":"11.0","fpts_dk":"9.0","fpts_ya":"11.0","fppm_fd":"2.20","fppm_dk":"1.80","fppm_ya":"2.20","minutes_played":"5"},{"game":"@ PHI 11\/9","fpts_fd":"29.4","fpts_dk":"31.5","fpts_ya":"29.4","fppm_fd":"1.09","fppm_dk":"1.17","fppm_ya":"1.09","minutes_played":"27"},{"game":"vs ATL 11\/6","fpts_fd":"13.2","fpts_dk":"12.5","fpts_ya":"13.2","fppm_fd":"0.78","fppm_dk":"0.74","fppm_ya":"0.78","minutes_played":"17"},{"game":"vs CLE 11\/3","fpts_fd":"20.8","fpts_dk":"19.0","fpts_ya":"20.8","fppm_fd":"1.16","fppm_dk":"1.06","fppm_ya":"1.16","minutes_played":"18"},{"game":"vs OKC 11\/1","fpts_fd":"21.8","fpts_dk":"21.8","fpts_ya":"21.8","fppm_fd":"0.87","fppm_dk":"0.87","fppm_ya":"0.87","minutes_played":"25"},{"game":"vs MIA 10\/30","fpts_fd":"25.1","fpts_dk":"25.5","fpts_ya":"25.1","fppm_fd":"0.97","fppm_dk":"0.98","fppm_ya":"0.97","minutes_played":"26"},{"game":"@ PHI 10\/27","fpts_fd":"15.7","fpts_dk":"16.0","fpts_ya":"15.7","fppm_fd":"0.68","fppm_dk":"0.70","fppm_ya":"0.68","minutes_played":"23"},{"game":"vs CHI 10\/26","fpts_fd":"30.9","fpts_dk":"29.3","fpts_ya":"30.9","fppm_fd":"1.63","fppm_dk":"1.54","fppm_ya":"1.63","minutes_played":"19"},{"game":"@ CHI 10\/24","fpts_fd":"11.4","fpts_dk":"12.5","fpts_ya":"11.4","fppm_fd":"0.71","fppm_dk":"0.78","fppm_ya":"0.71","minutes_played":"16"},{"game":"@ TOR 10\/22","fpts_fd":"16.5","fpts_dk":"15.8","fpts_ya":"16.5","fppm_fd":"1.03","fppm_dk":"0.98","fppm_ya":"1.03","minutes_played":"16"},{"game":"@ MIA 10\/20","fpts_fd":"31.6","fpts_dk":"26.3","fpts_ya":"31.6","fppm_fd":"1.09","fppm_dk":"0.91","fppm_ya":"1.09","minutes_played":"29"},{"game":"@ ORL 10\/19","fpts_fd":"35.3","fpts_dk":"34.3","fpts_ya":"35.3","fppm_fd":"1.60","fppm_dk":"1.56","fppm_ya":"1.60","minutes_played":"22"},{"game":"vs MIL 10\/17","fpts_fd":"20.7","fpts_dk":"20.5","fpts_ya":"20.7","fppm_fd":"0.94","fppm_dk":"0.93","fppm_ya":"0.94","minutes_played":"22"}];
+		this.last_ten_graph = [{"nickname":"Nets","game":"vs BKN 2\/23","opp_abbr":"BKN","home":"vs","win":"L","minutes_played":"26","fg":"3-6","three":"1-2","fg_pct":"50.0","rebounds":"2","assists":"1","blocks":"0","steals":"0","points":"9","fpts_fd":"10.90","fpts_dk":"12.50","fpts_ya":"10.90","fppm_fd":"0.42","fppm_dk":"0.48","fppm_ya":"0.42"},{"nickname":"Wizards","game":"vs WAS 2\/22","opp_abbr":"WAS","home":"vs","win":"W","minutes_played":"17","fg":"3-4","three":"0-0","fg_pct":"75.0","rebounds":"6","assists":"1","blocks":"0","steals":"0","points":"6","fpts_fd":"14.70","fpts_dk":"15.00","fpts_ya":"14.70","fppm_fd":"0.86","fppm_dk":"0.88","fppm_ya":"0.86"},{"nickname":"Magic","game":"@ ORL 2\/14","opp_abbr":"ORL","home":"@","win":"L","minutes_played":"14","fg":"0-2","three":"0-1","fg_pct":"0.0","rebounds":"2","assists":"0","blocks":"0","steals":"0","points":"0","fpts_fd":"2.40","fpts_dk":"2.50","fpts_ya":"2.40","fppm_fd":"0.17","fppm_dk":"0.18","fppm_ya":"0.17"},{"nickname":"Pacers","game":"@ IND 2\/11","opp_abbr":"IND","home":"@","win":"L","minutes_played":"15","fg":"1-5","three":"0-1","fg_pct":"20.0","rebounds":"1","assists":"0","blocks":"0","steals":"0","points":"4","fpts_fd":"5.20","fpts_dk":"5.25","fpts_ya":"5.20","fppm_fd":"0.35","fppm_dk":"0.35","fppm_ya":"0.35"},{"nickname":"Hawks","game":"@ ATL 2\/9","opp_abbr":"ATL","home":"@","win":"W","minutes_played":"29","fg":"5-5","three":"0-0","fg_pct":"100.0","rebounds":"3","assists":"1","blocks":"1","steals":"1","points":"11","fpts_fd":"20.10","fpts_dk":"19.25","fpts_ya":"20.10","fppm_fd":"0.69","fppm_dk":"0.66","fppm_ya":"0.69"},{"nickname":"Mavericks","game":"@ DAL 2\/6","opp_abbr":"DAL","home":"@","win":"L","minutes_played":"13","fg":"0-4","three":"0-0","fg_pct":"0.0","rebounds":"3","assists":"1","blocks":"1","steals":"0","points":"0","fpts_fd":"7.10","fpts_dk":"6.75","fpts_ya":"7.10","fppm_fd":"0.55","fppm_dk":"0.52","fppm_ya":"0.55"},{"nickname":"Clippers","game":"vs LAC 2\/5","opp_abbr":"LAC","home":"vs","win":"L","minutes_played":"19","fg":"0-1","three":"0-1","fg_pct":"0.0","rebounds":"2","assists":"1","blocks":"1","steals":"1","points":"2","fpts_fd":"9.90","fpts_dk":"9.00","fpts_ya":"9.90","fppm_fd":"0.52","fppm_dk":"0.47","fppm_ya":"0.52"},{"nickname":"Bulls","game":"vs CHI 2\/2","opp_abbr":"CHI","home":"vs","win":"W","minutes_played":"23","fg":"3-6","three":"0-1","fg_pct":"50.0","rebounds":"2","assists":"2","blocks":"0","steals":"0","points":"8","fpts_fd":"13.40","fpts_dk":"13.50","fpts_ya":"13.40","fppm_fd":"0.58","fppm_dk":"0.59","fppm_ya":"0.58"},{"nickname":"Grizzlies","game":"vs MEM 2\/1","opp_abbr":"MEM","home":"vs","win":"W","minutes_played":"25","fg":"3-6","three":"0-1","fg_pct":"50.0","rebounds":"4","assists":"0","blocks":"1","steals":"1","points":"10","fpts_fd":"20.80","fpts_dk":"19.00","fpts_ya":"20.80","fppm_fd":"0.83","fppm_dk":"0.76","fppm_ya":"0.83"},{"nickname":"Celtics","game":"@ BOS 1\/30","opp_abbr":"BOS","home":"@","win":"L","minutes_played":"19","fg":"3-5","three":"0-1","fg_pct":"60.0","rebounds":"1","assists":"2","blocks":"0","steals":"1","points":"6","fpts_fd":"13.20","fpts_dk":"12.25","fpts_ya":"13.20","fppm_fd":"0.69","fppm_dk":"0.64","fppm_ya":"0.69"}];
+		this.opp_graph = [];
+		this.win_graph = [{"game":"vs WAS 2\/22","fpts_fd":"14.7","fpts_dk":"15.0","fpts_ya":"14.7","fppm_fd":"0.86","fppm_dk":"0.88","fppm_ya":"0.86","minutes_played":"17"},{"game":"@ ATL 2\/9","fpts_fd":"20.1","fpts_dk":"19.3","fpts_ya":"20.1","fppm_fd":"0.69","fppm_dk":"0.66","fppm_ya":"0.69","minutes_played":"29"},{"game":"vs CHI 2\/2","fpts_fd":"13.4","fpts_dk":"13.5","fpts_ya":"13.4","fppm_fd":"0.58","fppm_dk":"0.59","fppm_ya":"0.58","minutes_played":"23"},{"game":"vs MEM 2\/1","fpts_fd":"20.8","fpts_dk":"19.0","fpts_ya":"20.8","fppm_fd":"0.83","fppm_dk":"0.76","fppm_ya":"0.83","minutes_played":"25"},{"game":"vs NY 1\/28","fpts_fd":"11.6","fpts_dk":"10.8","fpts_ya":"11.6","fppm_fd":"1.16","fppm_dk":"1.08","fppm_ya":"1.16","minutes_played":"10"},{"game":"@ MEM 1\/23","fpts_fd":"9.6","fpts_dk":"10.8","fpts_ya":"9.6","fppm_fd":"0.48","fppm_dk":"0.54","fppm_ya":"0.48","minutes_played":"20"},{"game":"vs PHO 1\/19","fpts_fd":"16.6","fpts_dk":"15.8","fpts_ya":"16.6","fppm_fd":"0.69","fppm_dk":"0.66","fppm_ya":"0.69","minutes_played":"24"},{"game":"vs SAC 1\/17","fpts_fd":"24.9","fpts_dk":"23.0","fpts_ya":"24.9","fppm_fd":"0.83","fppm_dk":"0.77","fppm_ya":"0.83","minutes_played":"30"},{"game":"@ SA 1\/14","fpts_fd":"14.9","fpts_dk":"15.3","fpts_ya":"14.9","fppm_fd":"0.60","fppm_dk":"0.61","fppm_ya":"0.60","minutes_played":"25"},{"game":"@ PHO 1\/6","fpts_fd":"12.4","fpts_dk":"12.0","fpts_ya":"12.4","fppm_fd":"0.78","fppm_dk":"0.75","fppm_ya":"0.78","minutes_played":"16"},{"game":"vs ORL 12\/31","fpts_fd":"10.4","fpts_dk":"9.5","fpts_ya":"10.4","fppm_fd":"0.52","fppm_dk":"0.48","fppm_ya":"0.52","minutes_played":"20"},{"game":"vs BKN 12\/28","fpts_fd":"9.2","fpts_dk":"9.0","fpts_ya":"9.2","fppm_fd":"0.66","fppm_dk":"0.64","fppm_ya":"0.66","minutes_played":"14"},{"game":"vs DET 12\/21","fpts_fd":"23.0","fpts_dk":"21.8","fpts_ya":"23.0","fppm_fd":"1.00","fppm_dk":"0.95","fppm_ya":"1.00","minutes_played":"23"},{"game":"vs CLE 12\/19","fpts_fd":"35.6","fpts_dk":"32.5","fpts_ya":"35.6","fppm_fd":"1.78","fppm_dk":"1.63","fppm_ya":"1.78","minutes_played":"20"},{"game":"@ NY 12\/9","fpts_fd":"18.3","fpts_dk":"17.5","fpts_ya":"18.3","fppm_fd":"0.80","fppm_dk":"0.76","fppm_ya":"0.80","minutes_played":"23"},{"game":"vs DEN 12\/7","fpts_fd":"15.0","fpts_dk":"14.3","fpts_ya":"15.0","fppm_fd":"1.00","fppm_dk":"0.95","fppm_ya":"1.00","minutes_played":"15"},{"game":"vs ATL 11\/28","fpts_fd":"22.7","fpts_dk":"21.0","fpts_ya":"22.7","fppm_fd":"1.42","fppm_dk":"1.31","fppm_ya":"1.42","minutes_played":"16"},{"game":"vs MIL 11\/26","fpts_fd":"24.9","fpts_dk":"23.3","fpts_ya":"24.9","fppm_fd":"1.38","fppm_dk":"1.29","fppm_ya":"1.38","minutes_played":"18"},{"game":"@ DET 11\/11","fpts_fd":"11.0","fpts_dk":"9.0","fpts_ya":"11.0","fppm_fd":"2.20","fppm_dk":"1.80","fppm_ya":"2.20","minutes_played":"5"},{"game":"vs ATL 11\/6","fpts_fd":"13.2","fpts_dk":"12.5","fpts_ya":"13.2","fppm_fd":"0.78","fppm_dk":"0.74","fppm_ya":"0.78","minutes_played":"17"},{"game":"vs CLE 11\/3","fpts_fd":"20.8","fpts_dk":"19.0","fpts_ya":"20.8","fppm_fd":"1.16","fppm_dk":"1.06","fppm_ya":"1.16","minutes_played":"18"},{"game":"vs MIA 10\/30","fpts_fd":"25.1","fpts_dk":"25.5","fpts_ya":"25.1","fppm_fd":"0.97","fppm_dk":"0.98","fppm_ya":"0.97","minutes_played":"26"},{"game":"vs CHI 10\/26","fpts_fd":"30.9","fpts_dk":"29.3","fpts_ya":"30.9","fppm_fd":"1.63","fppm_dk":"1.54","fppm_ya":"1.63","minutes_played":"19"},{"game":"@ MIA 10\/20","fpts_fd":"31.6","fpts_dk":"26.3","fpts_ya":"31.6","fppm_fd":"1.09","fppm_dk":"0.91","fppm_ya":"1.09","minutes_played":"29"},{"game":"@ ORL 10\/19","fpts_fd":"35.3","fpts_dk":"34.3","fpts_ya":"35.3","fppm_fd":"1.60","fppm_dk":"1.56","fppm_ya":"1.60","minutes_played":"22"}];
+		this.loss_graph = [{"game":"vs BKN 2\/23","fpts_fd":"10.9","fpts_dk":"12.5","fpts_ya":"10.9","fppm_fd":"0.42","fppm_dk":"0.48","fppm_ya":"0.42","minutes_played":"26"},{"game":"@ ORL 2\/14","fpts_fd":"2.4","fpts_dk":"2.5","fpts_ya":"2.4","fppm_fd":"0.17","fppm_dk":"0.18","fppm_ya":"0.17","minutes_played":"14"},{"game":"@ IND 2\/11","fpts_fd":"5.2","fpts_dk":"5.3","fpts_ya":"5.2","fppm_fd":"0.35","fppm_dk":"0.35","fppm_ya":"0.35","minutes_played":"15"},{"game":"@ DAL 2\/6","fpts_fd":"7.1","fpts_dk":"6.8","fpts_ya":"7.1","fppm_fd":"0.55","fppm_dk":"0.52","fppm_ya":"0.55","minutes_played":"13"},{"game":"vs LAC 2\/5","fpts_fd":"9.9","fpts_dk":"9.0","fpts_ya":"9.9","fppm_fd":"0.52","fppm_dk":"0.47","fppm_ya":"0.52","minutes_played":"19"},{"game":"@ BOS 1\/30","fpts_fd":"13.2","fpts_dk":"12.3","fpts_ya":"13.2","fppm_fd":"0.69","fppm_dk":"0.64","fppm_ya":"0.69","minutes_played":"19"},{"game":"@ MIL 1\/25","fpts_fd":"31.4","fpts_dk":"30.8","fpts_ya":"31.4","fppm_fd":"1.21","fppm_dk":"1.18","fppm_ya":"1.21","minutes_played":"26"},{"game":"@ IND 1\/20","fpts_fd":"8.4","fpts_dk":"9.5","fpts_ya":"8.4","fppm_fd":"0.47","fppm_dk":"0.53","fppm_ya":"0.47","minutes_played":"18"},{"game":"@ SAC 1\/12","fpts_fd":"27.4","fpts_dk":"25.8","fpts_ya":"27.4","fppm_fd":"1.05","fppm_dk":"0.99","fppm_ya":"1.05","minutes_played":"26"},{"game":"@ POR 1\/11","fpts_fd":"10.1","fpts_dk":"10.3","fpts_ya":"10.1","fppm_fd":"0.56","fppm_dk":"0.57","fppm_ya":"0.56","minutes_played":"18"},{"game":"@ LAC 1\/8","fpts_fd":"12.2","fpts_dk":"11.8","fpts_ya":"12.2","fppm_fd":"0.64","fppm_dk":"0.62","fppm_ya":"0.64","minutes_played":"19"},{"game":"@ DEN 1\/5","fpts_fd":"16.0","fpts_dk":"16.3","fpts_ya":"16.0","fppm_fd":"1.00","fppm_dk":"1.02","fppm_ya":"1.00","minutes_played":"16"},{"game":"vs DAL 1\/2","fpts_fd":"7.5","fpts_dk":"7.5","fpts_ya":"7.5","fppm_fd":"0.54","fppm_dk":"0.54","fppm_ya":"0.54","minutes_played":"14"},{"game":"@ WAS 12\/29","fpts_fd":"21.2","fpts_dk":"20.5","fpts_ya":"21.2","fppm_fd":"0.79","fppm_dk":"0.76","fppm_ya":"0.79","minutes_played":"27"},{"game":"@ BKN 12\/26","fpts_fd":"9.1","fpts_dk":"10.8","fpts_ya":"9.1","fppm_fd":"0.61","fppm_dk":"0.72","fppm_ya":"0.61","minutes_played":"15"},{"game":"@ BOS 12\/23","fpts_fd":"10.4","fpts_dk":"10.5","fpts_ya":"10.4","fppm_fd":"0.58","fppm_dk":"0.58","fppm_ya":"0.58","minutes_played":"18"},{"game":"vs LAL 12\/15","fpts_fd":"9.1","fpts_dk":"8.8","fpts_ya":"9.1","fppm_fd":"0.91","fppm_dk":"0.88","fppm_ya":"0.91","minutes_played":"10"},{"game":"vs NY 12\/14","fpts_fd":"8.8","fpts_dk":"9.5","fpts_ya":"8.8","fppm_fd":"0.55","fppm_dk":"0.59","fppm_ya":"0.55","minutes_played":"16"},{"game":"@ MIN 12\/5","fpts_fd":"16.0","fpts_dk":"16.8","fpts_ya":"16.0","fppm_fd":"0.70","fppm_dk":"0.73","fppm_ya":"0.70","minutes_played":"23"},{"game":"vs NO 12\/2","fpts_fd":"24.1","fpts_dk":"21.8","fpts_ya":"24.1","fppm_fd":"1.21","fppm_dk":"1.09","fppm_ya":"1.21","minutes_played":"20"},{"game":"vs UTA 11\/30","fpts_fd":"13.4","fpts_dk":"14.0","fpts_ya":"13.4","fppm_fd":"0.56","fppm_dk":"0.58","fppm_ya":"0.56","minutes_played":"24"},{"game":"@ PHI 11\/9","fpts_fd":"29.4","fpts_dk":"31.5","fpts_ya":"29.4","fppm_fd":"1.09","fppm_dk":"1.17","fppm_ya":"1.09","minutes_played":"27"},{"game":"vs OKC 11\/1","fpts_fd":"21.8","fpts_dk":"21.8","fpts_ya":"21.8","fppm_fd":"0.87","fppm_dk":"0.87","fppm_ya":"0.87","minutes_played":"25"},{"game":"@ PHI 10\/27","fpts_fd":"15.7","fpts_dk":"16.0","fpts_ya":"15.7","fppm_fd":"0.68","fppm_dk":"0.70","fppm_ya":"0.68","minutes_played":"23"},{"game":"@ CHI 10\/24","fpts_fd":"11.4","fpts_dk":"12.5","fpts_ya":"11.4","fppm_fd":"0.71","fppm_dk":"0.78","fppm_ya":"0.71","minutes_played":"16"},{"game":"@ TOR 10\/22","fpts_fd":"16.5","fpts_dk":"15.8","fpts_ya":"16.5","fppm_fd":"1.03","fppm_dk":"0.98","fppm_ya":"1.03","minutes_played":"16"},{"game":"vs MIL 10\/17","fpts_fd":"20.7","fpts_dk":"20.5","fpts_ya":"20.7","fppm_fd":"0.94","fppm_dk":"0.93","fppm_ya":"0.94","minutes_played":"22"}];
+	}
+	Model.prototype = {
+		updateGraphDataArray: function(){
+			var self = this;
+			var i = 0;
+			self.graph_array_data = [];
+			self.graph_array_games = [];
+			$.each(self[self.graph_view],function(key,value){
+				self.graph_array_games.push(value.game);
+				self.graph_array_data.push(parseFloat(value[self.graph_type]));
+			})
+			self.graph_array_games.reverse();
+			self.graph_array_data.reverse();
+		},
+		updateGraphTextAndTitles: function(){
+			this.graph_title = this.buildGraphTitle();
+			this.graph_y_axis_title = this.buildYAxisTitle();
+			this.graph_point_suffix = this.updateSuffix();
+		},
+		buildGraphTitle: function(){
+			if(this.graph_type=='minutes_played'){
+				return 'Minutes';
+			}else if(this.graph_type=='fpts_dk'||this.graph_type=='fpts_fd'||this.graph_type=='fpts_ya'){
+				return this.site_full.capitalizeFirstLetter()+' Points';
+			}else{
+				return this.site_full.capitalizeFirstLetter()+' Points Per Minute';
+			}
+		},
+		buildYAxisTitle: function(){
+			if(this.graph_type=='minutes_played'){
+				return 'Minutes';
+			}else if(this.graph_type=='fpts_dk'||this.graph_type=='fpts_fd'||this.graph_type=='fpts_ya'){
+				return this.site_short.toUpperCase()+' Points';
+			}else{
+				return this.site_short.toUpperCase()+' PPM';
+			}
+		},
+		updateSuffix: function(){
+			if(this.graph_type=='minutes_played'){
+				return 'Mins';
+			}else if(this.graph_type=='fpts_dk'||this.graph_type=='fpts_fd'||this.graph_type=='fpts_ya'){
+				return 'Pts';
+			}else{
+				return 'PPM';
+			}
+		},
+		filterSearch: function(search){
+			var self = this;
+			self.matched_players = [];
+			var i = 0;
+			var j = 0;
+			while(j<self.players_search.length&&i<5){
+				if(self.checkSearchMatch(self.players_search[j].name,search)){
+					self.matched_players.push(self.players_search[j]);
+					i+=1;
+				}
+				j+=1;
+			}
+		},
+		checkSearchMatch: function(player,search_text){
+			if(player.toLowerCase().indexOf(search_text.toLowerCase())>=0){
+				return true;
+			}else{
+				return false;
+			}
+		},
+	}
+
+	function View(){
+
+	}
+	View.prototype = {
+		updateActiveClass: function(parent, current){
+			$(parent).children().removeClass('active');
+			$(current).addClass('active');
+		},
+		appendSearchResults: function(players){
+			$('.search-results-body').empty();
+			$.each(players,function(key,player){
+				var playerString = '<tr data-href="/optimus/nba/daily-fantasy-advanced-player-stats?id='+player.player_id+'" class="clickable-row"><td id="vert-mid"><img src="/style/assets/img/nba/teams/'+player.nickname.replace(" ","_").toLowerCase()+'.png" height="25px;" /> '+player.name+'&nbsp;&nbsp;&nbsp;<span class="text-muted">'+player.pos+' | '+player.team_abbr+'</span></td></tr>';
+				$('.search-results-body').append(playerString);
+			})
+		}
+	}
+
+	function Controller(){
+		this.view = new View();
+		this.model = new Model();
+	}
+	Controller.prototype = {
+		searchListener: function(){
+			var self = this;
+			$('#search_text').keyup(function(){
+				var search = $('#search_text').val();
+				if(search==''){
+					$('.search-results-slider-body').hide();
+				}else{
+					$('.search-results-slider-body').show();
+				}
+				self.model.filterSearch(search);
+				self.view.appendSearchResults(self.model.matched_players);
+			})
+		},
+		searchSlideDownListener: function(){
+			// $('#search_text').on('focus',function(){
+			// 	$('.search-results-slider-body').slideDown();
+			// })
+			// $('#search_text').on('blur',function(){
+			// 	$('.search-results-slider-body').slideUp();
+			// })
+		},
+		siteListener: function(){
+			var self = this;
+			$(document).on('click','.fantasySite',function(){
+        self.model.site_full = $(this).attr('site');
+        self.model.site_short = $(this).attr('site-short');
+        self.updateGraphType(self.model.graph_type.split('_')[0]+'_');
+				self.platformChangeForMixPanel($(this).text());
+        self.updateGraph();
+      })
+		},
+		graphViewListener: function(){
+			var self = this;
+			$(document).on('click','.graph-view-button',function(){
+				self.view.updateActiveClass('.graph-view-parent',$(this));
+				self.model.graph_view = $(this).attr('type');
+				self.model.graph_subtitle = $(this).text();
+				self.updateGraph();
+			})
+		},
+		graphTypeListener: function(){
+			var self = this;
+			$(document).on('click','.graph-type-button',function(){
+				self.view.updateActiveClass('.graph-type-parent',$(this));
+				self.updateGraphType($(this).attr('type'));
+				self.updateGraph();
+			})
+		},
+		updateGraphType: function(type){
+			console.log(this.model.site_short);
+			if(type=='minutes_played'){
+				this.model.graph_type = type;
+			}else{
+				this.model.graph_type = type+this.model.site_short;
+			}
+		},
+		updateGraph: function(){
+			this.model.updateGraphDataArray();
+			this.model.updateGraphTextAndTitles();
+			this.destroyChart();
+			this.buildGraph();
+		},
+		destroyChart: function(){
+			this.model.chart.destroy();
+		},
+		buildGraph: function(){
+			var self = this;
+			$('#container').highcharts({
+				chart: {
+          type: 'line',
+        },
+        colors: ['#108EA9'],
+        title: {
+          text: self.model.graph_title,
+        },
+        subtitle: {
+          text: self.model.graph_subtitle,
+        },
+        xAxis: {
+          labels: {
+            enabled: false
+          }
+        },
+        yAxis: {
+            title: {
+                text: self.model.graph_y_axis_title
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+      		headerFormat: '',
+      		pointFormatter: function () {
+          	return self.model.graph_array_games[this.x]+'<br><b>'+this.y+'</b> '+self.model.graph_point_suffix;
+        	},
+        },
+       
+        series: [{
+        	name: self.model.graph_title,
+          data: self.model.graph_array_data
+        }]
+   		});
+   		self.model.chart = $('#container').highcharts();
+		},
+		platformChangeForMixPanel: function(site){
+      mixpanel.track("Click Platform",{
+        "Sport": "NBA",
+        "Platform": site
+      });
+	  }
+	}
+
+	$(document).ready(function(){
+		var controller = new Controller();
+		controller.model.updateGraphDataArray();
+		controller.buildGraph();
+		controller.siteListener();
+		controller.searchSlideDownListener();
+		controller.graphViewListener();
+		controller.graphTypeListener();
+		controller.searchListener();
+	})
+
+
+</script>
+    <style>
+      .fanDuel, .yahoo, .search-results-slider-body{
+        display: none;
+      }
+      .clickable-row{
+        cursor: pointer;
+      }
+      .injury-block{display:none;}    </style>
+
+    <!-- //////// -->
+    <!-- MIXPANEL -->
+    <!-- //////// -->
+    <script type="text/javascript">
+      mixpanel.track("View Advanced Player Stats",{
+        "Sport": "NBA"
+      });
+    </script>
+    <!-- //////// -->
+    <!-- MIXPANEL -->
+    <!-- //////// -->
+
+  </head>
+
+
+  <!-- Nav -->
+  <div id="menu1" class="menu_container topfixed full_width">
+ <!-- DEV COLOR NEEDS REMOVAL -->
+    <label for="hidden_menu_collapser" class="mobile_collapser">
+      
+    </label> <!-- Mobile menu title -->
+    <input id="hidden_menu_collapser" type="checkbox" />
+
+    <ul>
+    <!-- PROD LOGO 
+    <img src="/style/assets/img/homepage/swish-ball-2015.png" height="30"/>
+    PROD LOGO -->
+    <a href="/" class="swish-brand"><li><img src="/style/assets/img/homepage/swish-ball-2015-black.png" height="30"/></li></a>
+    
+    <!--/////////////-->
+    <!--// BETTING //-->
+    <!--/////////////-->
+    <li>
+        <a href="#"> BETTING</a>
+        <div class="menu_dropdown_block full_width">
+            <div class="md-container">
+                <div class="column four-col bordered" style="height:268px;">
+                    <div class="content">
+                        <a href="/nfl/"><h2><span class="enhanced-sports enhanced-sports-football"></span> NFL</h2></a>
+                        <ul class="menu_submenu">
+                            <li><a href="/nfl/">Games</a></li>
+                            <li><a href="/betting-analytics/nfl/optimus-parlay">Parlay Optimizer</a></li>
+                            <li><a href="/nfl/results/">Pick Results</a></li>
+                            <li><a href="/betting-analytics/nfl/">Betting Trends</a></li>
+                            <li><a href="/nfl/nfl-lines-odds/">Line Tracking</a></li>
+                            <li><a href="/nfl/team-season-projections">Win Total Projections</a></li>
+                            <li><a href="/nfl/nfl-team-futures/">Team Futures</a></li>
+                            <li><a href="/nfl/nfl-player-futures/">Player Futures</a></li>
+                            <li><a href="/nfl/live/" target="_blank">Live</a></li>
+                        </ul>
+
+
+                    </div>
+                </div>
+                <div class="column four-col bordered" style="height:225px;">
+                    <div class="content">
+                        <a href="/nba/"><h2><span class="enhanced-sports enhanced-sports-basketball"></span> NBA</h2></a>
+                        <ul class="menu_submenu">
+                            <li><a href="/nba/">Games</a></li>
+                            <li><a href="/betting-analytics/nba/optimus-parlay">Parlay Optimizer</a></li>
+                            <li><a href="/nba/results/">Pick Results</a></li>
+                            <li><a href="/betting-analytics/nba/">Betting Trends</a></li>
+                            <li><a href="/nba/nba-lines-odds">Line Tracking</a></li>
+                            <li><a href="/nba/team-season-projections">Win Total Projections</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column four-col bordered" style="height:225px;">
+                    <div class="content">
+                        <a href="/mlb/"><h2><span class="enhanced-sports enhanced-sports-baseball"></span> MLB</h2></a>
+                        <ul class="menu_submenu">
+                            <li><a href="/mlb/today">Games</a></li>
+                            <li><a href="/betting-analytics/mlb/optimus-parlay">Parlay Optimizer</a></li>
+                            <li><a href="/mlb/results/">Pick Results</a></li>
+                            <li><a href="/betting-analytics/mlb/">Betting Trends</a></li>
+                            <li><a href="/mlb/mlb-lines-odds">Line Tracking</a></li>
+                        </ul>
+                        <br>
+                    </div>
+                </div>
+                
+                <div class="column four-col" style="height:225px;">
+                    <div class="content">
+                        <a href="/nhl/"><h2><span class="enhanced-sports enhanced-sports-hockey"></span> NHL</h2></a>
+                        <ul class="menu_submenu">
+                            <li><a href="/nhl/">Games</a></li>
+                            <li><a href="/nhl/results/">Pick Results</a></li>
+                            <li><a href="/betting-analytics/nhl/">Betting Trends</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </li>
+    <!--/////////////-->
+    <!--// BETTING //-->
+    <!--/////////////-->
+
+
+
+
+    <!--/////////////-->
+    <!--// FANTASY //-->
+    <!--/////////////-->
+    <li>
+        <a href="#"> FANTASY</a>
+        <div class="menu_dropdown_block full_width">
+            <div class="md-container">
+                <div class="column four-col bordered" style="height:225px;">
+                    <div class="content">
+                        <a href="/nfl/"><h2><span class="enhanced-sports enhanced-sports-football"></span> NFL</h2></a>
+                        <ul class="menu_submenu">
+                            <li><a href="/optimus/nfl/optimus-x">OPTIMUS X </a></li>
+                            <li><a href="/optimus/nfl/fanduel-draftkings-algorithm-optimized-lineups">Optimized Lineups </a></li>
+                            <li><a href="/optimus/nfl/daily-fantasy-projections">Fantasy Projections </a></li>
+                            <li><a href="/optimus/nfl/nfl-daily-fantasy-lineup-results">Lineup Results</a></li>
+                            <li><a href="/optimus/nfl/fanduel-draftkings-live-scoring">Live Scoring</a></li>
+                            <li><a href="/optimus/nfl/start-or-sit">Start or Sit Tool</a></li>
+                        </ul>
+                        
+
+                    </div>
+                </div>
+                <div class="column four-col bordered" style="height:225px;">
+                    <div class="content">
+                        <a href="/nba/"><h2><span class="enhanced-sports enhanced-sports-basketball"></span> NBA</h2></a>
+                        <ul class="menu_submenu">
+                            <li><a href="/optimus/nba/optimus-x">OPTIMUS X </a></li>
+                            <li><a href="/optimus/nba/fanduel-draftkings-algorithm-optimized-lineups">Optimized Lineups </a></li>
+                            <li><a href="/optimus/nba/daily-fantasy-projections">Fantasy Projections </a></li>
+                            <li><a href="/optimus/nba/daily-fantasy-lineup-results">Lineup Results</a></li>
+                            <li><a href="/optimus/nba/fanduel-draftkings-live-scoring">Live Scoring</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column four-col bordered" style="height:225px;">
+                    <div class="content">
+                        <a href="/mlb/today"><h2><span class="enhanced-sports enhanced-sports-baseball"></span> MLB</h2></a>
+                        <ul class="menu_submenu">
+                            <li><a href="/optimus/mlb/optimus-x">OPTIMUS X </a></li>
+                            <li><a href="/optimus/mlb/fanduel-draftkings-algorithm-optimized-lineups">Optimized Lineups </a></li>
+                            <li><a href="/optimus/mlb/dfs-batter-projections">Batter Projections </a></li>
+                            <li><a href="/optimus/mlb/dfs-pitcher-projections">Pitcher Projections </a></li>
+                            <li><a href="/optimus/mlb/mlb-daily-fantasy-lineup-results">Lineup Results</a></li>
+                            <li><a href="/optimus/mlb/fanduel-draftkings-live-scoring">Live Scoring</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="column four-col" style="height:225px;">
+                    <div class="content">
+                        <a href="/nhl/"><h2><span class="enhanced-sports enhanced-sports-hockey"></span> NHL</h2></a>
+                        <ul class="menu_submenu">
+                            <li><a href="/optimus/nhl/optimus-x">OPTIMUS X </a></li>
+                            <li><a href="/optimus/nhl/fanduel-draftkings-algorithm-optimized-lineups">Optimized Lineups </a></li>
+                            <li><a href="/optimus/nhl/daily-fantasy-projections">Fantasy Projections </a></li>
+                            <li><a href="/optimus/nhl/daily-fantasy-lineup-results">Lineup Results</a></li>
+                        </ul>
+                    </div>
+                </div>
+           
+            </div>
+        </div>
+    </li>
+    <!--/////////////-->
+    <!--// FANTASY //-->
+    <!--/////////////-->
+
+
+    
+    <!--//////////////-->
+    <!--// RESEARCH //-->
+    <!--//////////////-->
+    <li>
+        <a href="#"> RESEARCH</a>
+        <div class="menu_dropdown_block full_width">
+            <div class="md-container">
+
+                <div class="column four-col bordered" style="height:320px;">
+                    <div class="content">
+                        <a href="/nfl/"><h2><span class="enhanced-sports enhanced-sports-football"></span> NFL</h2></a>
+                        <ul class="menu_submenu">
+                            <li><a href="/nfl/teams/">Teams & Standings</a></li>
+                            <li><a href="/injury/nfl-injury">Injuries</a></li>
+                            <li><a href="/nfl/players/">Players</a></li>
+                            <li><a href="/optimus/nfl/daily-fantasy-advanced-player-stats">Advanced Player Stats</a></li>
+                            <li><a href="/optimus/nfl/defensive-rankings">Defensive Rankings</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="column four-col bordered" style="height:320px;">
+                    <div class="content">
+                        <a href="/nba/"><h2><span class="enhanced-sports enhanced-sports-basketball"></span> NBA</h2></a>
+                        <ul class="menu_submenu">
+                            <li><a href="/nba/teams/">Teams & Standings</a></li>
+                            <li><a href="/injury/nba-injury">Injuries</a></li>
+                            <li><a href="/nba/players/">Players</a></li>
+                            <li><a href="/nba/referees/">Referees</a></li>
+                            <li><a href="/nba/nba-points-per-quarter">Points Per Quarter</a></li>
+                            <li><a href="/optimus/nba/daily-fantasy-advanced-player-stats">Advanced Player Stats</a></li>
+                            <li><a href="/optimus/nba/daily-fantasy-salary-changes">Salary Changes</a></li>
+                            <li><a href="/optimus/nba/daily-fantasy-spread-performance">Trends Performance</a></li>
+                            <li><a href="/optimus/nba/daily-fantasy-team-defensive-ranks-position">Defensive Rankings</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column four-col bordered" style="height:320px;">
+                    <div class="content">
+                        <a href="/mlb/"><h2><span class="enhanced-sports enhanced-sports-baseball"></span> MLB</h2></a>
+                        <ul class="menu_submenu">
+                            <li><a href="/mlb/teams/standings">Teams & Standings</a></li>
+                            <li><a href="/injury/mlb-injury">Injuries</a></li>
+                            <li><a href="/optimus/mlb/lineups">Lineups</a></li>
+                            <li><a href="/optimus/mlb/batting-splits">Batter Splits</a></li>
+                            <li><a href="/optimus/mlb/batter-vs-pitcher-stats">Batter vs Pitcher</a></li>
+                            <li><a href="/optimus/mlb/batter-comparison">Batter Comparison</a></li>
+                            <li><a href="/mlb/stolen-base-targets">Stolen Base Targets</a></li>
+                            <li><a href="/mlb/weather">Weather</a></li>
+                            <li><a href="/mlb/mlb-park-factors">Park Factors</a></li>
+                            <li><a href="/mlb/mlb-umpire-factors">Umpire Factors</a></li>
+                            <!--<li><a href="/optimus/mlb/pitcher-overview">Today's Pitchers</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="column four-col" style="height:320px;">
+                    <div class="content">
+            
+                        <a href="#"><h2><span class="enhanced-sports enhanced-sports-hockey"></span> NHL</h2></a>
+                        <ul class="menu_submenu">
+                            <li><a href="/nhl/teams/">Teams & Standings</a></li>
+                            <li><a href="/injury/nhl-injury">Injuries</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+                
+            </div>
+        </div>
+    </li>
+    <!--//////////////-->
+    <!--// RESEARCH //-->
+    <!--//////////////-->
+
+
+    <!--///////////////-->
+    <!--// Widgets //-->
+    <!--///////////////-->
+    <li>
+        <a href="/partners/nfl/"> WIDGETS</a>
+        <div class="menu_dropdown_block" style="width: 200px;">
+            <div class="md-container">
+                <div class="news">
+                        <ul class="menu_submenu">
+                            <li><a href="/partners/nfl/">NFL</a></li>
+                            <li><a href="/partners/nba">NBA</a></li>
+                            <li><a href="/partners/">MLB</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </li>
+    <!--///////////////-->
+    <!--// Widgets //-->
+    <!--///////////////-->
+
+
+    <!--///////////////-->
+    <!--// Access Now //-->
+    <!--///////////////-->
+    <li class="right last">
+    <a href="#" data-toggle="modal" data-target="#myModal">LOGIN / JOIN</a>    </li>
+
+    <li class="right">
+        <a href="/offers/plans">GET ACCESS</a>
+    </li>
+
+
+
+
+    <!--///////////////-->
+    <!--// Access Now //-->
+    <!--///////////////-->
+    
+
+    </ul>
+    </div><!-- /menu -->  <!-- Nav -->
+
+  <!-- Login/Join Modal -->
+  
+<script type="text/javascript">
+  $("a:contains('Login / Join')").click(function(){
+    mixpanel.track("View Login/Join Modal");
+  });
+
+  $(document).ready(function(){
+    $("#innerJoinTab").click(function(){
+      mixpanel.track("Clicked Join Tab");
+    });
+
+    $("#innerLoginTab").click(function(){
+      mixpanel.track("Clicked Login Tab");
+    });
+  });
+
+
+ </script>
+
+ <div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title text-center" id="myModalLabel"><img src="/style/assets/img/homepage/planet-swish-modal.png" height="30"></img></h4>
+      </div>
+
+      <div class="modal-body pad-10 pad-left-0 pad-right-0 pad-bottom-30">
+
+      <ul class="nav nav-tabs nav-tabs-modal text-center" role="tablist" id="myTab">
+        <li class="active"><a href="#join-tab" id="innerJoinTab" role="tab" data-toggle="tab">Join</a></li>
+        <li ><a href="#login-tab" id="innerLoginTab" role="tab" data-toggle="tab">Login</a></li>
+      </ul>
+      <br>
+            <!-- Content -->
+      <div class="tab-content">
+      <!-- Join -->
+      <div class="tab-pane fade in active" id="join-tab">
+
+      <form class="form-signin" name="join" action="" method="post">
+
+      <div class="row text-center margin-top-20">
+        <a href="/join?provider=Twitter"><img src="/style/assets/img/email/twit-circ.png" height="70" class="modal-img"></a>
+        <a href="https://www.facebook.com/v2.12/dialog/oauth?client_id=281376825369746&amp;state=382868dc401172c579c6a9494e493ff3&amp;response_type=code&amp;sdk=php-sdk-5.6.1&amp;redirect_uri=https%3A%2F%2Fswishanalytics.com%2Ffb-callback.php&amp;scope=email"><img src="/style/assets/img/email/FB-circ.png" height="70" class="modal-img"></img></a>
+        <a href="/join?provider=Google"><img src="/style/assets/img/email/Gplus-circ.png" height="70" class="modal-img"></img></a>
+      </div>
+
+      <div class="row text-center margin-top-20">
+      <div class="col-xs-12 text-center text-muted divider"><span>Or Use Your Email</span></div>
+      </div>
+
+      <div class="row text-center margin-top-20 pad-top-30 margin-join">
+        <input type="email" name="email" id="email" class="form-control has-success" placeholder="Email Address" autocomplete="off" autofocus>
+        <input type="password" class="form-control" placeholder="Password (Must be 8 characters)" name="password" id="password" >
+        <input type="password" class="form-control" placeholder="Confirm Password" name="confirm_password" id="confirm_password" >
+        <input type="hidden" name="did" id="did">
+
+        <div id="">
+   
+
+                 </div>
+
+
+        <input class="btn btn-lg btn-join btn-block" type="submit" name="register" id="register" value="JOIN">
+
+
+      </div>
+
+      </form>
+      </div>
+      <!--/ Join -->
+
+      <!-- Login -->
+      <div class="tab-pane fade" id="login-tab">
+         <form class="form-signin" name="login" action="" method="post">
+
+      <div class="row text-center margin-top-20">
+        <a href="/login?provider=Twitter"><img src="/style/assets/img/email/twit-circ.png" height="70" class="modal-img"></a>
+        <a href="https://www.facebook.com/v2.12/dialog/oauth?client_id=281376825369746&amp;state=382868dc401172c579c6a9494e493ff3&amp;response_type=code&amp;sdk=php-sdk-5.6.1&amp;redirect_uri=https%3A%2F%2Fswishanalytics.com%2Ffb-callback.php&amp;scope=email"><img src="/style/assets/img/email/FB-circ.png" height="70" class="modal-img"></img></a>
+        <a href="/login?provider=Google"><img src="/style/assets/img/email/Gplus-circ.png" height="70" class="modal-img"></img></a>
+      </div>
+      
+      <div class="row text-center margin-top-20">
+      <div class="col-xs-12 text-center text-muted divider"><span>Or Use Your Email</span></div>
+      </div>
+
+          
+      <div class="row text-left margin-top-20 pad-top-30 margin-join">
+        <input type="email" name="login_email" id="login_email" class="form-control has-success" placeholder="Email Address" autocomplete="off" autofocus>
+        <input type="password" class="form-control" placeholder="Password" name="login_password" id="login_password" >
+        <input type="hidden" name="did" id="did">
+
+        <div id="login-error-message">
+   
+
+                   </div>
+
+                <input class="btn btn-lg btn-join btn-block" type="submit" name="login-button" id="login-button" value="LOGIN">
+                <div class="text-muted dome_3 pad-top-10 text-center">Forgot your password? Click <a href="/forgotpassword" class="text-muted black-hov"><strong>here</strong></a>.</div>
+        </div>
+      </form> 
+
+      </div>
+      <!--/ Login -->
+      </div>
+      <!-- Content -->
+
+      </div>
+
+
+    </div>
+  </div>
+</div> 
+  <!-- Login/Join Modal End -->
+
+  <!-- My Account Modal -->
+    <!-- My Account Modal End -->
+
+<body>
+
+    <!-- Content -->
+    <div class="row">
+
+    <!-- Sidebar -->
+    
+<div class="col-sm-2 col-md-2 col-xs-2 sidebar">
+<div class="" style="font-size:85%;">
+    
+    <div class="list-group mar-top-0">
+        <div class="text-muted">NBA BETTING</div>
+        <a href="/nba/" class="list-group-item">
+            Games
+        </a>
+        <a href="/betting-analytics/nba/optimus-parlay" class="list-group-item">
+            Parlay Optimizer 
+        </a>
+        <a href="/nba/results/" class="list-group-item">
+            Pick Results 
+        </a>
+         <a href="/betting-analytics/nba/" class="list-group-item">
+            Betting Trends
+        </a>
+         <a href="/nba/nba-lines-odds" class="list-group-item">
+            Line Tracking 
+        </a>
+        <a href="/nba/team-season-projections" class="list-group-item">
+            Win Total Projections
+        </a>
+       
+    </div> 
+
+    <div class="list-group">
+        <div class="text-muted">NBA DAILY FANTASY</div>
+        <a href="/optimus/nba/optimus-x" class="list-group-item">
+            OPTIMUS X 
+        </a>
+        <a href="/optimus/nba/fanduel-draftkings-algorithm-optimized-lineups" class="list-group-item">
+            Optimized Lineups 
+        </a>
+        <a href="/optimus/nba/daily-fantasy-projections" class="list-group-item">
+            Fantasy Projections 
+        </a>
+        <a href="/optimus/nba/daily-fantasy-lineup-results" class="list-group-item">
+            Lineup Results
+        </a>
+        <a href="/optimus/nba/fanduel-draftkings-live-scoring" class="list-group-item">
+            Live Scoring
+        </a>
+
+    </div> 
+
+
+    <div class="list-group">
+        <div class="text-muted">NBA RESEARCH</div>
+
+        <a href="/nba/teams/" class="list-group-item">
+            Teams & Standings
+        </a>
+
+
+        <a href="/injury/nba-injury" class="list-group-item">
+        Injuries
+        </a>
+        <a href="/nba/players/" class="list-group-item">
+            Players
+        </a>
+        <a href="/nba/referees/" class="list-group-item">
+            Referees 
+        </a>
+        <a href="/nba/nba-points-per-quarter" class="list-group-item">
+            Points Per Quarter 
+        </a>
+
+        <a href="/optimus/nba/daily-fantasy-advanced-player-stats" class="list-group-item active">
+            Advanced Player Stats
+        </a>
+
+        <a href="/optimus/nba/daily-fantasy-salary-changes" class="list-group-item">
+            Salary Changes
+        </a>
+
+        <a href="/optimus/nba/daily-fantasy-spread-performance" class="list-group-item">
+            Trends Performance
+        </a>
+
+        <a href="/optimus/nba/daily-fantasy-team-defensive-ranks-position" class="list-group-item">
+            Defensive Rankings
+        </a>
+
+
+       
+        
+    
+
+        
+
+    </div>
+
+
+
+</div>
+</div>    <!-- Sidebar -->
+
+    <!-- Main -->
+    <div class="col-sm-10 col-md-10 col-xs-12">
+
+
+      <div class="row mar-bottom-10 pad-0">
+        <form class="input-group" id="search" name="search" onsubmit="return false">
+        <span class="input-group-addon" style="border-radius:0;"><span class="enhanced-sports enhanced-sports-search3 text-muted"></span></span>
+        <input class="form-control search-player" style="border-radius:0;" type="text" name="search_text" autocomplete="off" placeholder="Search Any Player" id="search_text" ></form>
+
+        <!-- SEARCH RESULTS -->
+        <div class="row search-results-slider-body">
+          <div class="panel-title pad-0 mar-top-0" style="position:relative;">
+            <table class="table table-condensed text-left helvetica mar-top-0 mar-bottom-0 pad-bottom-0">
+              <tbody class="helvetica search-results-body">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- SEARCH RESULTS -->
+
+      </div>
+
+
+
+      <!-- ///////////// -->
+      <!--   DFS Tite  -->
+      <!-- ///////////// -->
+      <div class="mar-top-10 panel-title border-top-nba-hornets">
+      <div class="row">
+
+      <div class="col-xs-12 col-md-10">
+       <h4 class="lato mar-top-0 mar-bottom-0"><strong><img src="/style/assets/img/nba/teams/hornets.png" height="45px;" /> Michael Kidd-Gilchrist <small class="lato mar-0 text-muted"><b>SF</b> Charlotte Hornets (28-31)</small></strong></h4>
+           <div class="row text-left mar-top-0 mar-left-0 mar-right-0">
+              <div class="btn-group fantasy-parent" role="group" aria-label="...">
+                <button class="btn-fanduel-time active fantasySite" site='draftKings' site-short='dk'>DraftKings</button>
+                <button class="btn-fanduel-time fantasySite" site='fanDuel' site-short='fd'>FanDuel</button>
+                <button class="btn-fanduel-time fantasySite" site='yahoo' site-short='ya'>Yahoo</button>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-md-2 text-right pitcher text-muted">
+         <a data-toggle="modal" data-target="#HowModal" href="#HowModal" class="text-muted"><small>How to use this page</small></a>
+      </div>
+
+      </div>
+
+      </div>
+      <!-- ///////////// -->
+      <!--   DFS Tite  -->
+      <!-- ///////////// -->
+
+      <!-- /////////// -->
+      <!-- Top 4 Stats -->
+      <!-- /////////// -->
+      <div class="row pad-bottom-0 top-4-stats-row mar-bottom-0 mar-top-1">
+
+        <div class="col-md-3 col-xs-6 top-4-stats">
+        <div class="panel-title mar-0 text-center pad-10 pad-top-2">
+        vs GS        <div class="lato dollar-amt pad-bottom-5"> <img src="/style/assets/img/nba/teams/warriors.png" height="45px;" /></div>
+
+        <div class="dollar-amt-desc">Next Game (Today 7P EST)</div>
+
+        </div>
+        </div>
+
+        <div class="col-md-3 col-xs-6 top-4-stats">
+        <div class="panel-title mar-0 text-center pad-10">
+
+        <span class="enhanced-sports enhanced-sports-coin amt-icon2"></span>
+        <div class="lato dollar-amt pad-bottom-5">
+          <span class="draftKings">$3,200</span>
+          <span class="fanDuel">$3,600</span>
+          <span class="yahoo">$10</span>
+        </div>
+        <div class="dollar-amt-desc">
+          <span class="draftKings">DraftKings Salary</span>
+          <span class="fanDuel">FanDuel Salary</span>
+          <span class="yahoo">Yahoo Salary</span>
+        </div>
+
+        </div>
+        </div>
+
+
+        <div class="col-md-3 col-xs-6 top-4-stats">
+        <div class="panel-title mar-0 text-center pad-10">
+
+        <span class="enhanced-sports enhanced-sports-clock amt-icon4"></span>
+        <div class="lato dollar-amt pad-bottom-5">19.8</div>
+        <div class="dollar-amt-desc">Avg Minutes</div>
+
+        </div>
+        </div>
+
+        <div class="col-md-3 col-xs-6 top-4-stats">
+        <div class="panel-title mar-0 text-center pad-10">
+
+        <span class="enhanced-sports enhanced-sports-compass2 amt-icon3"></span>
+        <div class="lato dollar-amt pad-bottom-5">
+          <span class="draftKings">16.3</span>
+          <span class="fanDuel">16.8</span>
+          <span class="yahoo">16.8</span>
+        </div>
+        <div class="dollar-amt-desc">Avg FPPG</div>
+
+        </div>
+        </div>
+
+
+      </div>
+      <!-- /////////// -->
+      <!-- Top 4 Stats -->
+      <!-- /////////// -->
+
+
+
+
+
+      <div class="pad-0 mar-top-0 overall-margin">
+      <div class="row">
+
+      <div class="col-md-6 pad-5">
+
+      <!-- Injury Status -->
+      <a href="/injury/nba-injury?id=603095" class="injury-block" target="_blank">
+      <div class="panel-title injury-background-- pad-10 mar-top-5 text-left bord-none">
+      <span class="enhanced-sports -"></span> - <small class="sm-80">(vs GS)</small>
+      <div class="pull-right"><span data-livestamp=""></span> <span class="enhanced-sports enhanced-sports-twitter"></span> <span class="enhanced-sports enhanced-sports-arrow-right2"></span></div>
+      </div>
+      </a>
+      <!-- Injury Status -->
+
+
+      <!-- Projections - Next Game -->
+      <div class="panel-title pad-5 mar-top-5 light-grey-back bord-bottom-grey text-center border-top-nba-hornets">
+      Projections <small class="text-muted"> vs GS<img src="/style/assets/img/nba/teams/warriors.png" height="25px;" /> Today 7P EST</small>
+      </div>
+      <div class="panel-title pad-0 mar-top-0">
+
+
+            <table class="table table-condensed text-left helvetica mar-top-0 mar-bottom-0 pad-bottom-0 sm-80">
+
+            <thead>
+              <tr class="text-muted">
+                <td class="pad-top-10 pad-bottom-10">Salary</td>
+                <td class="pad-top-10 pad-bottom-10">MIN</td>
+                <td class="pad-top-10 pad-bottom-10">PTS</td>
+                <td class="pad-top-10 pad-bottom-10">REB</td>
+                <td class="pad-top-10 pad-bottom-10">AST</td>
+                <td class="pad-top-10 pad-bottom-10">STL</td>
+                <td class="pad-top-10 pad-bottom-10">BLK</td>
+                <td class="pad-top-10 pad-bottom-10">TO</td>
+                <td class="pad-top-10 pad-bottom-10">VALUE</td>
+                <td class="pad-top-10 pad-bottom-10">AVG FPTS</td>
+                <td class="pad-top-10 pad-bottom-10">Proj FPTS</td>
+              </tr>
+            </thead>
+
+            <tbody class="helvetica">
+
+            <tr href="#">
+                <td id="vert-mid">$3,200</td>
+                <td id="vert-mid">22.3</td>
+                <td id="vert-mid">8.2</td>
+                <td id="vert-mid">4.3</td>
+                <td id="vert-mid">0.9</td>
+                <td id="vert-mid">0.7</td>
+                <td id="vert-mid">0.4</td>
+                <td id="vert-mid">0.9</td>
+                <td id="vert-mid">5.3</td>
+                <td id="vert-mid" class="draftKings">16.3</td>
+                <td id="vert-mid" class="fanDuel">16.8</td>
+                <td id="vert-mid" class="yahoo">16.8</td>
+                <td id="vert-mid" class="fantasy-blue draftKings">16.8</td>
+                <td id="vert-mid" class="fantasy-blue fanDuel">17.0</td>
+                <td id="vert-mid" class="fantasy-blue yahoo">17.0</td>
+            </tr>
+
+              </tbody>
+            </table>
+
+      </div>
+      <!-- Projections - Next Game -->
+
+
+      <!-- Season Splits -->
+      <div class="panel-title pad-5 mar-top-5 light-grey-back bord-bottom-grey text-center border-top-nba-hornets">
+      Season Splits
+      </div>
+      <div class="panel-title pad-0 mar-top-0">
+
+
+            <table class="table table-condensed text-left helvetica mar-top-0 mar-bottom-0 pad-bottom-0 sm-80">
+
+            <thead>
+              <tr class="text-muted">
+                <td class="pad-top-10 pad-bottom-10"></td>
+                <td class="pad-top-10 pad-bottom-10">GP</td>
+                <td class="pad-top-10 pad-bottom-10">GS</td>
+                <td class="pad-top-10 pad-bottom-10">MPG</td>
+                <td class="pad-top-10 pad-bottom-10">FG%</td>
+                <td class="pad-top-10 pad-bottom-10">RPG</td>
+                <td class="pad-top-10 pad-bottom-10">APG</td>
+                <td class="pad-top-10 pad-bottom-10">BLKPG</td>
+                <td class="pad-top-10 pad-bottom-10">STLPG</td>
+                <td class="pad-top-10 pad-bottom-10">PPG</td>
+                <td class="pad-top-10 pad-bottom-10">FPPG</td>
+              </tr>
+            </thead>
+
+            <tbody class="helvetica">
+
+            <tr href="#">
+                <td id="vert-mid"><b class="text-muted">2018 Season</b></td>
+                <td id="vert-mid">52</td>
+                <td id="vert-mid">1</td>
+                <td id="vert-mid">19.8</td>
+                <td id="vert-mid">48.1%</td>
+                <td id="vert-mid">4.2</td>
+                <td id="vert-mid">0.9</td>
+                <td id="vert-mid">0.7</td>
+                <td id="vert-mid">0.5</td>
+                <td id="vert-mid">7.4</td>
+                <td id="vert-mid" class="fantasy-blue draftKings">16.3</td>
+                <td id="vert-mid" class="fantasy-blue fanDuel">16.8</td>
+                <td id="vert-mid" class="fantasy-blue yahoo">16.8</td>
+            </tr>
+
+            <tr href="#">
+                <td id="vert-mid"><b class="text-muted">Last 10 Games</td>
+                <td id="vert-mid">10</td>
+                <td id="vert-mid">0</td>
+                <td id="vert-mid">20.0</td>
+                <td id="vert-mid">47.7%</td>
+                <td id="vert-mid">2.6</td>
+                <td id="vert-mid">0.9</td>
+                <td id="vert-mid">0.4</td>
+                <td id="vert-mid">0.4</td>
+                <td id="vert-mid">5.6</td>
+                <td id="vert-mid" class="fantasy-blue draftKings">11.5</td>
+                <td id="vert-mid" class="fantasy-blue fanDuel">11.8</td>
+                <td id="vert-mid" class="fantasy-blue yahoo">11.8</td>
+            </tr>
+
+            <tr href="#">
+                <td id="vert-mid"><b class="text-muted">vs Warriors (2018)</td>
+                <td id="vert-mid">0</td>
+                <td id="vert-mid">0</td>
+                <td id="vert-mid">0.0</td>
+                <td id="vert-mid">0.0%</td>
+                <td id="vert-mid">0.0</td>
+                <td id="vert-mid">0.0</td>
+                <td id="vert-mid">0.0</td>
+                <td id="vert-mid">0.0</td>
+                <td id="vert-mid">0.0</td>
+                <td id="vert-mid" class="fantasy-blue draftKings">0.0</td>
+                <td id="vert-mid" class="fantasy-blue fanDuel">0.0</td>
+                <td id="vert-mid" class="fantasy-blue yahoo">0.0</td>
+            </tr>
+
+            <tr href="#">
+                <td id="vert-mid"><b class="text-muted">In Wins</td>
+                <td id="vert-mid">25</td>
+                <td id="vert-mid">0</td>
+                <td id="vert-mid">20.2</td>
+                <td id="vert-mid">53.6%</td>
+                <td id="vert-mid">4.6</td>
+                <td id="vert-mid">1.0</td>
+                <td id="vert-mid">1.0</td>
+                <td id="vert-mid">0.7</td>
+                <td id="vert-mid">7.9</td>
+                <td id="vert-mid" class="fantasy-blue draftKings">18.4</td>
+                <td id="vert-mid" class="fantasy-blue fanDuel">19.4</td>
+                <td id="vert-mid" class="fantasy-blue yahoo">19.4</td>
+            </tr>
+
+            <tr href="#">
+                <td id="vert-mid"><b class="text-muted">In Losses</td>
+                <td id="vert-mid">27</td>
+                <td id="vert-mid">1</td>
+                <td id="vert-mid">19.4</td>
+                <td id="vert-mid">43.4%</td>
+                <td id="vert-mid">3.9</td>
+                <td id="vert-mid">0.9</td>
+                <td id="vert-mid">0.4</td>
+                <td id="vert-mid">0.4</td>
+                <td id="vert-mid">7.0</td>
+                <td id="vert-mid" class="fantasy-blue draftKings">14.5</td>
+                <td id="vert-mid" class="fantasy-blue fanDuel">14.4</td>
+                <td id="vert-mid" class="fantasy-blue yahoo">14.4</td>
+            </tr>
+
+              </tbody>
+            </table>
+
+      </div>
+      <!-- Season Splits -->
+
+      <!-- Last 10 Games -->
+      <div class="panel-title pad-5 mar-top-10 light-grey-back bord-bottom-grey text-center border-top-nba-hornets">
+      Last 10 Games
+      </div>
+      <div class="panel-title pad-0 mar-top-0">
+
+
+            <table class="table table-condensed text-left helvetica mar-top-0 mar-bottom-0 pad-bottom-0 sm-80">
+
+            <thead>
+              <tr class="text-muted">
+                <td class="pad-top-10 pad-bottom-10"></td>
+                <td class="pad-top-10 pad-bottom-10">W/L</td>
+                <td class="pad-top-10 pad-bottom-10">MIN</td>
+                <td class="pad-top-10 pad-bottom-10">FG-A</td>
+                <td class="pad-top-10 pad-bottom-10">3PT-A</td>
+                <td class="pad-top-10 pad-bottom-10">FG%</td>
+                <td class="pad-top-10 pad-bottom-10">REB</td>
+                <td class="pad-top-10 pad-bottom-10">AST</td>
+                <td class="pad-top-10 pad-bottom-10">BLK</td>
+                <td class="pad-top-10 pad-bottom-10">STL</td>
+                <td class="pad-top-10 pad-bottom-10">PTS</td>
+                <td class="pad-top-10 pad-bottom-10">FPTS</td>
+              </tr>
+            </thead>
+
+            <tbody class="helvetica">
+              <tr href="#">
+                          <td id="vert-mid"><b class="text-muted"> vs BKN <img src="/style/assets/img/nba/teams/nets.png" height="15px;" /></b></td>
+                          <td id="vert-mid" class="red">L</td>
+                          <td id="vert-mid">26</td>
+                          <td id="vert-mid">3-6</td>
+                          <td id="vert-mid">1-2</td>
+                          <td id="vert-mid">50.0%</td>
+                          <td id="vert-mid">2</td>
+                          <td id="vert-mid">1</td>
+                          <td id="vert-mid">0</td>
+                          <td id="vert-mid">0</td>
+                          <td id="vert-mid">9</td>
+                          <td id="vert-mid" class="fantasy-blue draftKings">12.5</td>
+                          <td id="vert-mid" class="fantasy-blue fanDuel">10.9</td>
+                          <td id="vert-mid" class="fantasy-blue yahoo">10.9</td>
+                      </tr><tr href="#">
+                          <td id="vert-mid"><b class="text-muted"> vs WAS <img src="/style/assets/img/nba/teams/wizards.png" height="15px;" /></b></td>
+                          <td id="vert-mid" class="green">W</td>
+                          <td id="vert-mid">17</td>
+                          <td id="vert-mid">3-4</td>
+                          <td id="vert-mid">0-0</td>
+                          <td id="vert-mid">75.0%</td>
+                          <td id="vert-mid">6</td>
+                          <td id="vert-mid">1</td>
+                          <td id="vert-mid">0</td>
+                          <td id="vert-mid">0</td>
+                          <td id="vert-mid">6</td>
+                          <td id="vert-mid" class="fantasy-blue draftKings">15.0</td>
+                          <td id="vert-mid" class="fantasy-blue fanDuel">14.7</td>
+                          <td id="vert-mid" class="fantasy-blue yahoo">14.7</td>
+                      </tr><tr href="#">
+                          <td id="vert-mid"><b class="text-muted"> @ ORL <img src="/style/assets/img/nba/teams/magic.png" height="15px;" /></b></td>
+                          <td id="vert-mid" class="red">L</td>
+                          <td id="vert-mid">14</td>
+                          <td id="vert-mid">0-2</td>
+                          <td id="vert-mid">0-1</td>
+                          <td id="vert-mid">0.0%</td>
+                          <td id="vert-mid">2</td>
+                          <td id="vert-mid">0</td>
+                          <td id="vert-mid">0</td>
+                          <td id="vert-mid">0</td>
+                          <td id="vert-mid">0</td>
+                          <td id="vert-mid" class="fantasy-blue draftKings">2.5</td>
+                          <td id="vert-mid" class="fantasy-blue fanDuel">2.4</td>
+                          <td id="vert-mid" class="fantasy-blue yahoo">2.4</td>
+                      </tr><tr href="#">
+                          <td id="vert-mid"><b class="text-muted"> @ IND <img src="/style/assets/img/nba/teams/pacers.png" height="15px;" /></b></td>
+                          <td id="vert-mid" class="red">L</td>
+                          <td id="vert-mid">15</td>
+                          <td id="vert-mid">1-5</td>
+                          <td id="vert-mid">0-1</td>
+                          <td id="vert-mid">20.0%</td>
+                          <td id="vert-mid">1</td>
+                          <td id="vert-mid">0</td>
+                          <td id="vert-mid">0</td>
+                          <td id="vert-mid">0</td>
+                          <td id="vert-mid">4</td>
+                          <td id="vert-mid" class="fantasy-blue draftKings">5.3</td>
+                          <td id="vert-mid" class="fantasy-blue fanDuel">5.2</td>
+                          <td id="vert-mid" class="fantasy-blue yahoo">5.2</td>
+                      </tr><tr href="#">
+                          <td id="vert-mid"><b class="text-muted"> @ ATL <img src="/style/assets/img/nba/teams/hawks.png" height="15px;" /></b></td>
+                          <td id="vert-mid" class="green">W</td>
+                          <td id="vert-mid">29</td>
+                          <td id="vert-mid">5-5</td>
+                          <td id="vert-mid">0-0</td>
+                          <td id="vert-mid">100.0%</td>
+                          <td id="vert-mid">3</td>
+                          <td id="vert-mid">1</td>
+                          <td id="vert-mid">1</td>
+                          <td id="vert-mid">1</td>
+                          <td id="vert-mid">11</td>
+                          <td id="vert-mid" class="fantasy-blue draftKings">19.3</td>
+                          <td id="vert-mid" class="fantasy-blue fanDuel">20.1</td>
+                          <td id="vert-mid" class="fantasy-blue yahoo">20.1</td>
+                      </tr><tr href="#">
+                          <td id="vert-mid"><b class="text-muted"> @ DAL <img src="/style/assets/img/nba/teams/mavericks.png" height="15px;" /></b></td>
+                          <td id="vert-mid" class="red">L</td>
+                          <td id="vert-mid">13</td>
+                          <td id="vert-mid">0-4</td>
+                          <td id="vert-mid">0-0</td>
+                          <td id="vert-mid">0.0%</td>
+                          <td id="vert-mid">3</td>
+                          <td id="vert-mid">1</td>
+                          <td id="vert-mid">1</td>
+                          <td id="vert-mid">0</td>
+                          <td id="vert-mid">0</td>
+                          <td id="vert-mid" class="fantasy-blue draftKings">6.8</td>
+                          <td id="vert-mid" class="fantasy-blue fanDuel">7.1</td>
+                          <td id="vert-mid" class="fantasy-blue yahoo">7.1</td>
+                      </tr><tr href="#">
+                          <td id="vert-mid"><b class="text-muted"> vs LAC <img src="/style/assets/img/nba/teams/clippers.png" height="15px;" /></b></td>
+                          <td id="vert-mid" class="red">L</td>
+                          <td id="vert-mid">19</td>
+                          <td id="vert-mid">0-1</td>
+                          <td id="vert-mid">0-1</td>
+                          <td id="vert-mid">0.0%</td>
+                          <td id="vert-mid">2</td>
+                          <td id="vert-mid">1</td>
+                          <td id="vert-mid">1</td>
+                          <td id="vert-mid">1</td>
+                          <td id="vert-mid">2</td>
+                          <td id="vert-mid" class="fantasy-blue draftKings">9.0</td>
+                          <td id="vert-mid" class="fantasy-blue fanDuel">9.9</td>
+                          <td id="vert-mid" class="fantasy-blue yahoo">9.9</td>
+                      </tr><tr href="#">
+                          <td id="vert-mid"><b class="text-muted"> vs CHI <img src="/style/assets/img/nba/teams/bulls.png" height="15px;" /></b></td>
+                          <td id="vert-mid" class="green">W</td>
+                          <td id="vert-mid">23</td>
+                          <td id="vert-mid">3-6</td>
+                          <td id="vert-mid">0-1</td>
+                          <td id="vert-mid">50.0%</td>
+                          <td id="vert-mid">2</td>
+                          <td id="vert-mid">2</td>
+                          <td id="vert-mid">0</td>
+                          <td id="vert-mid">0</td>
+                          <td id="vert-mid">8</td>
+                          <td id="vert-mid" class="fantasy-blue draftKings">13.5</td>
+                          <td id="vert-mid" class="fantasy-blue fanDuel">13.4</td>
+                          <td id="vert-mid" class="fantasy-blue yahoo">13.4</td>
+                      </tr><tr href="#">
+                          <td id="vert-mid"><b class="text-muted"> vs MEM <img src="/style/assets/img/nba/teams/grizzlies.png" height="15px;" /></b></td>
+                          <td id="vert-mid" class="green">W</td>
+                          <td id="vert-mid">25</td>
+                          <td id="vert-mid">3-6</td>
+                          <td id="vert-mid">0-1</td>
+                          <td id="vert-mid">50.0%</td>
+                          <td id="vert-mid">4</td>
+                          <td id="vert-mid">0</td>
+                          <td id="vert-mid">1</td>
+                          <td id="vert-mid">1</td>
+                          <td id="vert-mid">10</td>
+                          <td id="vert-mid" class="fantasy-blue draftKings">19.0</td>
+                          <td id="vert-mid" class="fantasy-blue fanDuel">20.8</td>
+                          <td id="vert-mid" class="fantasy-blue yahoo">20.8</td>
+                      </tr><tr href="#">
+                          <td id="vert-mid"><b class="text-muted"> @ BOS <img src="/style/assets/img/nba/teams/celtics.png" height="15px;" /></b></td>
+                          <td id="vert-mid" class="red">L</td>
+                          <td id="vert-mid">19</td>
+                          <td id="vert-mid">3-5</td>
+                          <td id="vert-mid">0-1</td>
+                          <td id="vert-mid">60.0%</td>
+                          <td id="vert-mid">1</td>
+                          <td id="vert-mid">2</td>
+                          <td id="vert-mid">0</td>
+                          <td id="vert-mid">1</td>
+                          <td id="vert-mid">6</td>
+                          <td id="vert-mid" class="fantasy-blue draftKings">12.3</td>
+                          <td id="vert-mid" class="fantasy-blue fanDuel">13.2</td>
+                          <td id="vert-mid" class="fantasy-blue yahoo">13.2</td>
+                      </tr>
+
+
+
+              </tbody>
+            </table>
+
+      </div>
+      <!-- Last 10 Games -->
+
+      </div>
+
+      <div class="col-md-6 pad-5">
+
+      <!-- Performance Graph -->
+      <div class="panel-title pad-5 mar-top-5 light-grey-back bord-bottom-grey text-center border-top-nba-hornets">
+      Performance
+      </div>
+      <div class="panel-title pad-0 mar-top-0">
+
+      <div class="light-blue-back pad-10">
+      <ul class="list-inline list-betting-analytics graph-type-parent pad-top-5">
+        <li class="title">Type</li>
+        <li class="active view-type graph-type-button" type='fpts_'>Fantasy Points</li>
+        <li class="view-type graph-type-button" type='fppm_'>FPPM</li>
+        <li class="view-type graph-type-button" type='minutes_played'>Mins</li>
+      </ul>
+
+      <ul class="list-inline list-betting-analytics graph-view-parent pad-top-0">
+        <li class="title">View</li>
+        <li class="active view-type graph-view-button" type='season_graph'>2018 Season</li>
+        <li class="view-type graph-view-button" type='last_ten_graph'>Last 10</li>
+        <li class="view-type graph-view-button" type='opp_graph'>vs Warriors</li>
+        <li class="view-type graph-view-button" type='win_graph'>In Wins</li>
+        <li class="view-type graph-view-button" type='loss_graph'>In Losses</li>
+      </ul>
+
+      </div>
+
+      <div class="mar-right-10 mar-left-10">
+      <div id="container" style="min-width: 300px; height: 300px; max-width: 800px; margin: 0 auto"></div>
+      </div>
+
+
+      </div>
+      <!-- Performance Graph -->
+
+
+
+      <!-- News -->
+      <div class="panel-title pad-5 mar-top-5 light-grey-back bord-bottom-grey text-center border-top-nba-hornets">
+      News
+      </div>
+
+      <div class="panel-title mar-top-0 helvetica sm-85 text-center" name="carmelo anthony">
+        <blockquote class="twitter-tweet ofs-border sm-90">
+                <p class="bg-110">.@OrlandoMagic coach Steve Clifford said he'll use Mo Bamba (tibia fracture) the same way he did @hornets F Michael Kidd-Gilchrist when he missed most of a season w/ shoulder injuries. Clifford had MKG chart plays, meet with coaches after games and have input to keep him engaged.</p><div class="row"><div class="col-xs-6 pad-0 text-left"><div class="rotoTime"><span class="enhanced-sports enhanced-sports-twitter twitter-blue"></span> <span data-livestamp="2019-02-05 19:17:05"></span> ago </div></div>
+                <div class="col-xs-6 pad-0 text-right"><div class="tweet-status-icon injury-ofs"><span class="enhanced-sports enhanced-sports-skull"></span><br>Out for Season</div></div></div></blockquote>
+        </div>
+      </div>
+      <!-- News -->
+
+
+
+
+      </div>
+
+      </div>
+      </div>
+
+
+
+
+
+<div class="row text-center mar-top-20">
+
+</div>
+
+    </div>
+    <!-- Main -->
+    </div>
+    <!-- / Content -->
+
+
+<!-- How Works Modal -->
+<div class="modal fade" id="HowModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <div class="mobile-hide">
+          <div class="row text-center"><h2 class="lato mar-top-0"><b><span class="enhanced-sports enhanced-sports-basketball"></span> NBA Advanced Player Fantasy Stats</b></h2></div>
+        </div>
+
+        <div class="desktop-hide">
+          <div class="row text-center"><h3 class="lato mar-top-0"><span class="enhanced-sports enhanced-sports-basketball"></span> NBA Advanced Player Fantasy Stats</h3></div>
+        </div>
+      </div>
+
+      <div class="modal-body">
+
+
+        <div class="row text-left mar-top-0 helvetica">
+        <br>
+        <br>
+
+        <b> Stats Glossary:</b>
+
+        <div class="row mar-top-0 pad-0">
+          <div class="col-xs-6 mar-top-5 pad-0">
+            <ul class="pad-0" style="list-style:none; font-size:80%;">
+            <li><b>MIN =</b> Minutes </li>
+            <li><b>PTS =</b> Points</li>
+            <li><b>REB =</b> Rebounds</li>
+            <li><b>AST =</b> Assists</li>
+            <li><b>STL =</b> Steals</li>
+            <li><b>TO =</b> Turnovers</li>
+            <li><b>BLK =</b> Blocks</li>
+            <li><b>Value =</b> Projected Value (Projected Fantasy Points x 1,0000 / Salary)</li>
+            <li><b>AVG FPTS =</b> Average Fantasy Points</li>
+            <li><b>Proj FPTS =</b> Projected Fantasy Points</li>
+            <li><b>W/L =</b> Win/Loss</li>
+            <li><b>FG-A =</b> FGM-FGA</li>
+            </ul>
+          </div>
+          <div class="col-xs-6 mar-top-5 pad-0">
+            <ul class="pad-0" style="list-style:none; font-size:80%;">
+            <li><b>GP =</b> Games Played</li>
+            <li><b>GS =</b> Games Started</li>
+            <li><b>MPG =</b> Minutes per Game</li>
+            <li><b>FG% =</b> Field Goal %</li>
+            <li><b>RPG =</b> Rebounds Per Game</li>
+            <li><b>APG =</b> Assists Per Game</li>
+            <li><b>BLKPG =</b> Blocks Per Game</li>
+            <li><b>STLPG =</b> Steals Per Game</li>
+            <li><b>PPG =</b> Points Per Game</li>
+            <li><b>FPPG =</b> Fantasy Points Per Game</li>
+            <li><b>3PT-A =</b> 3PTM-3PTA</li>
+            <li><b>FPPM =</b> Fantasy Points Per Minute</li>
+            </ul>
+          </div>
+        </div>
+
+        <br>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!--/ Login -->
+
+
+  </div>
+  <!-- Content -->
+
+</div>
+<!-- How Works Modal -->
+
+<!-- Footer -->
+<div id="footer">      
+      <div class="container">
+
+      <!--Row-->
+      <div class="row">
+
+      <!--Col-->
+      <div class="col-xs-4 pad-0">
+
+        <div class="pull-left">
+
+
+            <a href="https://twitter.com/swishanalytics" target="_blank"><img src="/style/assets/img/email/twit-circ.png" height="30"></img></a>
+            <a href="https://www.facebook.com/pages/Swish-Analytics/652303321502147" target="_blank"><img src="/style/assets/img/email/FB-circ.png" height="30"></img></a><br><br>
+
+            &copy;Swish Analytics Inc, 2019 | <a href="/legal/terms-of-service">Terms of Service</a> | <a href="/legal/privacy-policy">Privacy Policy</a>
+
+        </div>
+        
+      
+      </div>
+      <!--Col-->
+
+      <!--Col-->
+      <div class="col-xs-2 pad-0">
+
+      <ul id="footer-list">
+      <li id="list-head"><strong>BETTING</strong></li>
+      <li><a href="/nfl/">NFL</a></li>
+      <li><a href="/nba/">NBA</a></li>
+      <li><a href="/mlb/">MLB</a></li>
+      <li><a href="/nhl/">NHL</a></li>
+      <li><a href="/injury/">Injury Feed</a></li>
+      <li><a href="/FAQ">FAQ</a></li>
+      </ul>
+
+      </div>
+      <!--Col-->
+
+      <!--Col-->
+      <div class="col-xs-2 pad-0">
+
+      <ul id="footer-list">
+      <li id="list-head"><strong>FANTASY</strong></li>
+      <li><a href="/optimus/">Home</li>
+      <li><a href="/optimus/optimus-lineup-nba">Lineups</li>
+      <li><a href="/optimus/optimus-x">Optimizer</li>
+      <li><a href="/injury/">Injury Feed</a></li>
+      </ul>
+      </div>
+      <!--Col-->
+
+      <!--Col-->
+      <div class="col-xs-2 pad-0">
+  
+      <ul id="footer-list">
+      <li id="list-head"><strong>ABOUT</strong></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/about/">Jobs</a></li>
+      <li><a href="/about/">Press</a></li>
+      <li><a href="/about/">Connect</a></li>
+      <li><a href="/partners/nfl/">Widget Portal</a></li>
+      </ul>
+      
+      </div>
+      <!--Col-->
+
+      <!--Col-->
+      <div class="col-xs-2 pad-0">
+
+        <div class="pull-right"><a href="/"><img src="/style/assets/img/homepage/swish-ball-2015-black.png" height="40"></img></a></div>
+      
+      </div>
+      <!--Col-->
+
+
+
+      </div>
+      <!--/Row-->
+
+      </div>
+</div>
+
+<!--  Footer -->
+
+
+
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b78776823f","applicationID":"33486834","transactionName":"NVdWNRRTXhICW0MNCgwdYRMPHV8RF1FaERZNXFYASVZRCA9BGgIEDEZVEh8fUQUVWVkHAAYfRA0HS1UTTktDBRERHEQJFg==","queueTime":0,"applicationTime":108,"atts":"GRBVQ1xJTRw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="/style/dist/js/bootstrap.min.js"></script>
+    <script src="/style/dist/js/hamburgler.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://cdn.rawgit.com/x1024/jquery-fastbutton/master/bin/fastbutton.js"></script>
+
+
+    <script>
+     $(function () {
+      // $('#container').highcharts({
+      //     title: {
+      //         text: 'DraftKings Points',
+
+      //     },
+      //     subtitle: {
+      //         text: '2015 Season',
+
+      //     },
+      //     xAxis: {
+      //         categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+      //             'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+      //     },
+      //     yAxis: {
+      //         title: {
+      //             text: 'DK Points'
+      //         },
+      //         plotLines: [{
+      //             value: 0,
+      //             width: 1,
+      //             color: '#808080'
+      //         }]
+      //     },
+      //     tooltip: {
+      //         valueSuffix: 'Pts'
+      //     },
+
+      //     series: [{
+      //         name: 'DraftKings PHHHoints',
+      //         data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6,7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6,7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+      //     }]
+      // });
+    });
+    </script>
+
+    <script>
+      jQuery(document).ready(function($) {
+        $(document).on('click','.clickable-row',function(){
+          window.document.location = $(this).data("href");
+        })
+      });
+    </script>
+
+
+    <script>
+      $(document).on('click','.fantasySite',function(){
+        var site = $(this).attr('site');
+        $('.fantasy-parent').children().removeClass('active');
+        $(this).addClass('active');
+        $('.draftKings').hide();
+        $('.fanDuel').hide();
+        $('.yahoo').hide();
+        $('.'+site).show();
+      })
+
+
+    </script>
+
+
+</html>
