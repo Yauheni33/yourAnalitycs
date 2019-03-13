@@ -56,12 +56,16 @@ class Youtube
   end
 
   def saveInFile
-    file = File.open("#{@name_file}.json", "w")
+    sortByLike
+    file = File.open("comments/#{@name_file}.json", "w")
     file.puts @comments.to_json
     file.close
-    puts 'СОХРАНЕНО СУЧАРА'
   end
 
+  def sortByLike
+    sort = @comments[:Comments].sort_by { |hash| hash['likeCount'].to_i }
+    @comments[:Comments] = sort
+  end
 end
 
 

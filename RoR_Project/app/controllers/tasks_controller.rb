@@ -12,6 +12,7 @@ class TasksController < ApplicationController
     out_file = File.new("app/controllers/todo/#{params[:name]}.txt", "w")
     out_file.puts("#{params[:url]}")
     out_file.close
+    #@comments = readFileComments(params[:name])
     puts params[:url]
     #Task.create(in_file[:tasks])
   end
@@ -24,6 +25,15 @@ class TasksController < ApplicationController
   def destroy
     field = Task.find_by(text: params["nodes"].first["text"])
     field.destroy
+  end
+
+  def readFileComments(file_name)
+    loop{
+      files = Dir.entries("app/controllers/comments")
+      break if files.include?("#{file_name}.json")
+      sleep 5
+    }
+    JSON(File.read("app/controllers/comments/#{file_name}.json"))
   end
 
 end

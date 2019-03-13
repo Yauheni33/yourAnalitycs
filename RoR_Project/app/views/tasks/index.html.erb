@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="favicon.ico">  
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Global CSS -->
     <%= stylesheet_link_tag "bootstrap.min.css" %>
     <%= stylesheet_link_tag "font-awesome.css" %>
@@ -28,7 +29,6 @@
 </head> 
 
 <body data-spy="scroll">
-    
     <!---//Facebook button code-->
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
@@ -198,16 +198,34 @@ promote their personal projects</p>
             <div class="docs-inner">
             <h2 class="title text-center">Get Started</h2>    
             <form class="form-inline" action="/tasks" method="POST">
-                <div class="form-group mb-2">
-                    <small id="emailHelp" class="form-text text-muted">Введите ссылку на видео </small>
-                </div>
                 <div class="form-group mx-sm-3 mb-2">
-                    <label for="inputPassword2" class="sr-only">Ссылка</label>
-                    <input name="url" type="text" class="form-control" id="inputPassword2" placeholder="Url" style="margin-left:10px">
+                    <input name="url" type="text" class="form-control" id="inputPassword2" placeholder="Ссылка на видео" style="margin-left:10px">
                     <input name="name" type="text" class="form-control" id="inputPassword2" placeholder="Имя файла" style="margin-left:10px">
                 </div>
-                <button type="submit" class="btn btn-primary mb-2" style="margin-left:30px" onclick="request()">Отправить на обработку</button>
+                <button type="submit" class="btn btn-primary mb-2" style="margin-left:30px" onclick="requestToBackend()">Отправить на обработку</button>
+                <div id="myModal" class="modal fade">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Заголовок окна</h4>
+                </div>
+                <div class="modal-body">Текст уведомления</div>
+                <div class="modal-footer"><button onclick="closeModal()" class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button></div>
+                </div>
+                </div>
+                </div>
             </form>
+            <ul class="list-group" style="margin-top:40px">
+                <% if @comments %>
+                    <% @comments[:Comments].each do |comment| %>
+                        <li class="list-group-item"><%=comment.text %>
+                            <a class="btn btn-danger float-md-right">
+                                <span class="glyphicon glyphicon-heart"></span> <%=comment.likeCount %> 
+                            </a>
+                        </li>
+                    <% end %>
+                <% end %>
+            </ul>
          
         </div><!--//container-->
     </section><!--//features-->
@@ -297,8 +315,13 @@ promote their personal projects</p>
     <%= javascript_include_tag "prism.js" %>
     <%= javascript_include_tag "main.js" %>  
     <script>
-        function request() {
-            console.log('123')
+        function requestToBackend() {
+            $("#myModal").modal('show')
+            $('header').css( "visibility", "hidden")
+        }
+
+        function closeModal() {
+           $('header').css( "visibility", "visible") 
         }
     
     </script>
