@@ -4,8 +4,6 @@
     <list default="true" id="8791b5c3-01ec-4e79-96b9-ead253d1dc16" name="Default Changelist" comment="base html">
       <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RoR_Project" beforeDir="false" afterPath="$PROJECT_DIR$/RoR_Project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RoR_Project/app/controllers/tasks_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/RoR_Project/app/controllers/tasks_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RoR_Project/app/views/tasks/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/RoR_Project/app/views/tasks/index.html.erb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +15,7 @@
     <session id="1038477941">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.opened" value="1" />
         </counts>

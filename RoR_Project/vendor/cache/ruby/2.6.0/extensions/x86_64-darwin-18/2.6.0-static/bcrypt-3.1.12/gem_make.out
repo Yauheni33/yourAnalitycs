@@ -1,0 +1,19 @@
+current directory: /Users/yauheni/Desktop/antitroll/Django/RoR_Project/vendor/cache/ruby/2.6.0/gems/bcrypt-3.1.12/ext/mri
+/Users/yauheni/.rbenv/versions/2.6.1/bin/ruby -I /Users/yauheni/.rbenv/versions/2.6.1/lib/ruby/site_ruby/2.6.0 -r ./siteconf20190401-46686-l4vhwc.rb extconf.rb
+creating Makefile
+
+current directory: /Users/yauheni/Desktop/antitroll/Django/RoR_Project/vendor/cache/ruby/2.6.0/gems/bcrypt-3.1.12/ext/mri
+make "DESTDIR=" clean
+
+current directory: /Users/yauheni/Desktop/antitroll/Django/RoR_Project/vendor/cache/ruby/2.6.0/gems/bcrypt-3.1.12/ext/mri
+make "DESTDIR="
+compiling bcrypt_ext.c
+compiling crypt.c
+compiling crypt_blowfish.c
+compiling crypt_gensalt.c
+compiling wrapper.c
+linking shared-object bcrypt_ext.bundle
+
+current directory: /Users/yauheni/Desktop/antitroll/Django/RoR_Project/vendor/cache/ruby/2.6.0/gems/bcrypt-3.1.12/ext/mri
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bcrypt_ext.bundle ./.gem.20190401-46686-33mh9n
