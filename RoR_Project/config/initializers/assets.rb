@@ -12,6 +12,8 @@ Rails.application.config.assets.precompile += %w( bootstrap.min.js )
 Rails.application.config.assets.precompile += %w( jquery.scrollTo.min.js )
 Rails.application.config.assets.precompile += %w( prism.js )
 Rails.application.config.assets.precompile += %w( main.js )
+Rails.application.config.assets.precompile += %w( style-sign.css )
+Rails.application.config.assets.precompile += %w( sign.js )
 
 
 
