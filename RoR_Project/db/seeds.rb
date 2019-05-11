@@ -5,5 +5,3 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-tasks = Task.create([{ text: "Star Wars" , done: "true"}, { text: 'hobbit', done: "Lord of the Rings" }])
