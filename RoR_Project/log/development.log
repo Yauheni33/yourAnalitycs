@@ -21148,3 +21148,1267 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-05-11 15:51:48 +0300
+Processing by WelcomeController#index as HTML
+Completed 500 Internal Server Error in 422ms
+
+
+  
+Gem::LoadError (Specified 'postgresql' for database adapter, but the gem is not loaded. Add `gem 'pg'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  
+activerecord (5.1.6) lib/active_record/connection_adapters/connection_specification.rb:188:in `rescue in spec'
+activerecord (5.1.6) lib/active_record/connection_adapters/connection_specification.rb:185:in `spec'
+activerecord (5.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:880:in `establish_connection'
+activerecord (5.1.6) lib/active_record/connection_handling.rb:58:in `establish_connection'
+activerecord (5.1.6) lib/active_record/railtie.rb:124:in `block (2 levels) in <class:Railtie>'
+activesupport (5.1.6) lib/active_support/lazy_load_hooks.rb:69:in `instance_eval'
+activesupport (5.1.6) lib/active_support/lazy_load_hooks.rb:69:in `block in execute_hook'
+activesupport (5.1.6) lib/active_support/lazy_load_hooks.rb:60:in `with_execution_control'
+activesupport (5.1.6) lib/active_support/lazy_load_hooks.rb:65:in `execute_hook'
+activesupport (5.1.6) lib/active_support/lazy_load_hooks.rb:50:in `block in run_load_hooks'
+activesupport (5.1.6) lib/active_support/lazy_load_hooks.rb:49:in `each'
+activesupport (5.1.6) lib/active_support/lazy_load_hooks.rb:49:in `run_load_hooks'
+activerecord (5.1.6) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+activerecord (5.1.6) lib/active_record/base.rb:25:in `<top (required)>'
+activesupport (5.1.6) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.6) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.6) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.6) lib/active_support/dependencies.rb:292:in `require'
+activerecord (5.1.6) lib/active_record/railties/controller_runtime.rb:26:in `cleanup_view_runtime'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:43:in `render'
+actionpack (5.1.6) lib/action_controller/metal/implicit_render.rb:33:in `default_render'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.6) lib/active_support/callbacks.rb:108:in `block in run_callbacks'
+react-rails (2.5.0) lib/react/rails/controller_lifecycle.rb:31:in `use_react_component_helper'
+activesupport (5.1.6) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+activesupport (5.1.6) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-05-11 15:52:59 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 3722ms (Views: 3237.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-11 16:43:12 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 3714ms (Views: 3207.1ms)
+
+
+Started GET "/feedback" for 127.0.0.1 at 2019-05-11 16:43:24 +0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"path"=>"feedback"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 51ms (Views: 49.1ms)
+
+
+Started GET "/feedback" for 127.0.0.1 at 2019-05-11 16:43:29 +0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"path"=>"feedback"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 49ms (Views: 46.5ms)
+
+
+Started GET "/feedback" for 127.0.0.1 at 2019-05-11 16:43:39 +0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"path"=>"feedback"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 46ms (Views: 44.1ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css.map"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.1.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.6) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.1.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.6) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/feedback" for 127.0.0.1 at 2019-05-11 16:43:54 +0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"path"=>"feedback"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 58ms (Views: 55.9ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css.map"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.1.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.6) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.1.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.6) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/feedback" for 127.0.0.1 at 2019-05-11 16:44:34 +0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"path"=>"feedback"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 3042ms (Views: 2576.6ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css.map"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.1.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.6) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.1.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.6) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/feed_back" for 127.0.0.1 at 2019-05-11 16:45:47 +0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"path"=>"feed_back"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 72ms (Views: 66.3ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css.map"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.1.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.6) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.1.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.6) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/feed_backfasd" for 127.0.0.1 at 2019-05-11 16:45:57 +0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"path"=>"feed_backfasd"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (102.1ms)
+Completed 200 OK in 149ms (Views: 145.6ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css.map"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.1.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.6) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.1.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.6) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/feed_backfasd/fasd" for 127.0.0.1 at 2019-05-11 16:46:02 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/feed_backfasd/fasd"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/feed_back/create" for 127.0.0.1 at 2019-05-11 16:46:20 +0300
+Processing by FeedBackController#create as HTML
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/feed_back/create" for 127.0.0.1 at 2019-05-11 16:47:08 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/feed_back/create"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/api/feedback" for 127.0.0.1 at 2019-05-11 16:47:24 +0300
+  
+ActionController::RoutingError (uninitialized constant FeedbackController):
+  
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/api/feedback" for 127.0.0.1 at 2019-05-11 16:50:59 +0300
+Processing by FeedbackController#create as HTML
+  Rendering feedback/create.html.erb within layouts/application
+  Rendered feedback/create.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 3901ms (Views: 3420.4ms)
+
+
+Started GET "/api/feedback/%D0%B0%D1%84%D1%8B%D0%B2" for 127.0.0.1 at 2019-05-11 16:51:54 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/feedback/%D0%B0%D1%84%D1%8B%D0%B2"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/feedback/create" for 127.0.0.1 at 2019-05-11 16:52:05 +0300
+Processing by FeedbackController#create as HTML
+  Rendering feedback/create.html.erb within layouts/application
+  Rendered feedback/create.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 46ms (Views: 44.0ms)
+
+
+Started GET "/api/feedback/%D0%B0%D1%84%D1%8B%D0%B2" for 127.0.0.1 at 2019-05-11 16:53:26 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/feedback/%D0%B0%D1%84%D1%8B%D0%B2"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "//api/feedback" for 127.0.0.1 at 2019-05-11 16:53:37 +0300
+Processing by FeedbackController#create as HTML
+  Rendering feedback/create.html.erb within layouts/application
+  Rendered feedback/create.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 48ms (Views: 44.5ms)
+
+
+Started GET "/api/feedback" for 127.0.0.1 at 2019-05-11 16:53:40 +0300
+Processing by FeedbackController#create as HTML
+  Rendering feedback/create.html.erb within layouts/application
+  Rendered feedback/create.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 35ms (Views: 32.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-11 17:02:48 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (17.1ms)
+Started GET "/" for 127.0.0.1 at 2019-05-11 17:02:52 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 6535ms (Views: 5902.0ms)
+
+
+Completed 200 OK in 5291ms (Views: 5289.0ms)
+
+
+Started GET "/fasd/fasd" for 127.0.0.1 at 2019-05-11 17:03:03 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/fasd/fasd"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/fasd/fasd" for 127.0.0.1 at 2019-05-11 17:03:28 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/fasd/fasd"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/api/feedback" for 127.0.0.1 at 2019-05-11 17:03:36 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/feedback"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/api/feedback" for 127.0.0.1 at 2019-05-11 17:04:00 +0300
+Processing by FeedbackController#create as JSON
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 720ms
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.6) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.6) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.6) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.6) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.6) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.6) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.6) lib/active_support/callbacks.rb:106:in `block in run_callbacks'
+react-rails (2.5.0) lib/react/rails/controller_lifecycle.rb:31:in `use_react_component_helper'
+activesupport (5.1.6) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+activesupport (5.1.6) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/api/feedback" for 127.0.0.1 at 2019-05-11 17:18:36 +0300
+Processing by FeedbackController#create as JSON
+Can't verify CSRF token authenticity.
+Completed 200 OK in 788ms (Views: 0.6ms)
+
+
+Started GET "/api/feedback" for 127.0.0.1 at 2019-05-11 17:26:06 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/feedback"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/api/feedback" for 127.0.0.1 at 2019-05-11 18:19:17 +0300
+  [1m[35m (6.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.6) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.6) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (11.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateFeedbacks (20190511151854)
+  [1m[35m (28.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (185.6ms)[0m  [1m[35mCREATE TABLE "feedbacks" ("id" bigserial primary key, "name" character varying, "surname" text, "name_channel" text, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (3.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190511151854"]]
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/feedback" for 127.0.0.1 at 2019-05-11 18:20:06 +0300
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FeedbackController#create as JSON
+Can't verify CSRF token authenticity.
+Completed 200 OK in 31ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/feedback?name=Yauheni&surname=Busko&name_channel=e_busya&email=busko-007@mail.ru" for 127.0.0.1 at 2019-05-11 18:41:24 +0300
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FeedbackController#create as JSON
+  Parameters: {"name"=>"Yauheni", "surname"=>"Busko", "name_channel"=>"e_busya", "email"=>"busko-007@mail.ru"}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: feedback):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?name=Yauheni&surname=Busko&name_channel=e_busya&email=busko-007@mail.ru" for 127.0.0.1 at 2019-05-11 18:43:02 +0300
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FeedbackController#create as JSON
+  Parameters: {"name"=>"Yauheni", "surname"=>"Busko", "name_channel"=>"e_busya", "email"=>"busko-007@mail.ru"}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: feedback):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?name=Yauheni&surname=Busko&name_channel=e_busya&email=busko-007@mail.ru" for 127.0.0.1 at 2019-05-11 18:48:26 +0300
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FeedbackController#create as JSON
+  Parameters: {"name"=>"Yauheni", "surname"=>"Busko", "name_channel"=>"e_busya", "email"=>"busko-007@mail.ru"}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: feedback):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?name=Yauheni&surname=Busko&name_channel=e_busya&email=busko-007@mail.ru" for 127.0.0.1 at 2019-05-11 18:48:32 +0300
+Processing by FeedbackController#create as JSON
+  Parameters: {"name"=>"Yauheni", "surname"=>"Busko", "name_channel"=>"e_busya", "email"=>"busko-007@mail.ru"}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: feedback):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?name=Yauheni&surname=Busko&name_channel=e_busya&email=busko-007@mail.ru" for 127.0.0.1 at 2019-05-11 18:48:39 +0300
+Processing by FeedbackController#create as JSON
+  Parameters: {"name"=>"Yauheni", "surname"=>"Busko", "name_channel"=>"e_busya", "email"=>"busko-007@mail.ru"}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: feedback):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?name=Yauheni&surname=Busko&name_channel=e_busya&email=busko-007@mail.ru" for 127.0.0.1 at 2019-05-11 18:49:28 +0300
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FeedbackController#create as JSON
+  Parameters: {"name"=>"Yauheni", "surname"=>"Busko", "name_channel"=>"e_busya", "email"=>"busko-007@mail.ru"}
+Completed 400 Bad Request in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: feedback):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?name=Yauheni&surname=Busko&name_channel=e_busya&email=busko-007@mail.ru" for 127.0.0.1 at 2019-05-12 15:37:08 +0300
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FeedbackController#create as JSON
+  Parameters: {"name"=>"Yauheni", "surname"=>"Busko", "name_channel"=>"e_busya", "email"=>"busko-007@mail.ru"}
+Completed 400 Bad Request in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: feedback):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (39.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/feedback?name=Yauheni&surname=Busko&name_channel=e_busya&email=busko-007@mail.ru" for 127.0.0.1 at 2019-05-12 15:50:12 +0300
+  [1m[35m (42.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FeedbackController#create as JSON
+  Parameters: {"name"=>"Yauheni", "surname"=>"Busko", "name_channel"=>"e_busya", "email"=>"busko-007@mail.ru"}
+Completed 400 Bad Request in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: feedbacks):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?name=Yauheni&surname=Busko&name_channel=e_busya&email=busko-007@mail.ru" for 127.0.0.1 at 2019-05-12 15:58:33 +0300
+  [1m[35m (22.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FeedbackController#create as JSON
+  Parameters: {"name"=>"Yauheni", "surname"=>"Busko", "name_channel"=>"e_busya", "email"=>"busko-007@mail.ru"}
+Completed 400 Bad Request in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: feedbacks):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?name=Yauheni&surname=Busko&name_channel=e_busya&email=busko-007@mail.ru" for 127.0.0.1 at 2019-05-12 16:05:07 +0300
+  [1m[35m (39.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FeedbackController#create as JSON
+  Parameters: {"name"=>"Yauheni", "surname"=>"Busko", "name_channel"=>"e_busya", "email"=>"busko-007@mail.ru"}
+Completed 400 Bad Request in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: feedbacks):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?name=Yauheni&surname=Busko&name_channel=e_busya&email=busko-007@mail.ru" for 127.0.0.1 at 2019-05-12 16:05:48 +0300
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FeedbackController#create as JSON
+  Parameters: {"name"=>"Yauheni", "surname"=>"Busko", "name_channel"=>"e_busya", "email"=>"busko-007@mail.ru"}
+Completed 400 Bad Request in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: feedback):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?name=Yauheni&surname=Busko&name_channel=e_busya&email=busko-007@mail.ru" for 127.0.0.1 at 2019-05-12 16:12:38 +0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FeedbackController#create as JSON
+  Parameters: {"name"=>"Yauheni", "surname"=>"Busko", "name_channel"=>"e_busya", "email"=>"busko-007@mail.ru"}
+Completed 400 Bad Request in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: feedback):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?feedback=%7Bname=Yauheni&surname=Busko&name_channel=e_busya&email=busko-007@mail.ru%7D" for 127.0.0.1 at 2019-05-12 16:25:41 +0300
+Processing by FeedbackController#create as JSON
+  Parameters: {"feedback"=>"{name=Yauheni", "surname"=>"Busko", "name_channel"=>"e_busya", "email"=>"busko-007@mail.ru}"}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `permit' for "{name=Yauheni":String):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?feedback=[name=Yauheni&surname=Busko&name_channel=e_busya&email=busko-007@mail.ru]" for 127.0.0.1 at 2019-05-12 16:28:04 +0300
+Processing by FeedbackController#create as JSON
+  Parameters: {"feedback"=>"[name=Yauheni", "surname"=>"Busko", "name_channel"=>"e_busya", "email"=>"busko-007@mail.ru]"}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `permit' for "[name=Yauheni":String):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?feedback:[name=Yauheni&surname=Busko&name_channel=e_busya&email=busko-007@mail.ru]" for 127.0.0.1 at 2019-05-12 16:29:16 +0300
+Processing by FeedbackController#create as JSON
+  Parameters: {"feedback:"=>{"name"=>"Yauheni"}, "surname"=>"Busko", "name_channel"=>"e_busya", "email"=>"busko-007@mail.ru]"}
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: feedback):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?feedback=[name=Yauheni&surname=Busko&name_channel=e_busya&email=busko-007@mail.ru]" for 127.0.0.1 at 2019-05-12 16:29:42 +0300
+Processing by FeedbackController#create as JSON
+  Parameters: {"feedback"=>"[name=Yauheni", "surname"=>"Busko", "name_channel"=>"e_busya", "email"=>"busko-007@mail.ru]"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `permit' for "[name=Yauheni":String):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?feedback=name=Yauheni&surname=Busko&name_channel=e_busya&email=busko-007@mail.ru" for 127.0.0.1 at 2019-05-12 16:30:42 +0300
+Processing by FeedbackController#create as JSON
+  Parameters: {"feedback"=>"name=Yauheni", "surname"=>"Busko", "name_channel"=>"e_busya", "email"=>"busko-007@mail.ru"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `permit' for "name=Yauheni":String):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?feedback=[name:Yauheni&surname=Busko&name_channel=e_busya&email=busko-007@mail.ru]" for 127.0.0.1 at 2019-05-12 16:32:20 +0300
+Processing by FeedbackController#create as JSON
+  Parameters: {"feedback"=>"[name:Yauheni", "surname"=>"Busko", "name_channel"=>"e_busya", "email"=>"busko-007@mail.ru]"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `permit' for "[name:Yauheni":String):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?feedback=[name=Yauheni,surname=Busko,name_channel=e_busya,email=busko-007@mail.ru]" for 127.0.0.1 at 2019-05-12 16:33:49 +0300
+Processing by FeedbackController#create as JSON
+  Parameters: {"feedback"=>"[name=Yauheni,surname=Busko,name_channel=e_busya,email=busko-007@mail.ru]"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `permit' for #<String:0x00007fe44ba4cc70>):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?feedback=%7Bname=Yauheni,surname=Busko,name_channel=e_busya,email=busko-007@mail.ru%7D" for 127.0.0.1 at 2019-05-12 16:34:25 +0300
+Processing by FeedbackController#create as JSON
+  Parameters: {"feedback"=>"{name=Yauheni,surname=Busko,name_channel=e_busya,email=busko-007@mail.ru}"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `permit' for #<String:0x00007fe44b9a79a0>):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?feedback=%7Bname:Yauheni,surname:Busko,name_channel:e_busya,email:busko-007@mail.ru%7D" for 127.0.0.1 at 2019-05-12 16:34:46 +0300
+Processing by FeedbackController#create as JSON
+  Parameters: {"feedback"=>"{name:Yauheni,surname:Busko,name_channel:e_busya,email:busko-007@mail.ru}"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `permit' for #<String:0x00007fe4489520c0>):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?feedback=%7Bname:Yauheni,surname:Busko,name_channel:e_busya,email:busko-007@mail.ru%7D" for 127.0.0.1 at 2019-05-12 16:36:06 +0300
+  [1m[35m (39.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FeedbackController#create as JSON
+  Parameters: {"feedback"=>"{name:Yauheni,surname:Busko,name_channel:e_busya,email:busko-007@mail.ru}"}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (private method `require' called for nil:NilClass):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?feedback=%7Bname:Yauheni,surname:Busko,name_channel:e_busya,email:busko-007@mail.ru%7D" for 127.0.0.1 at 2019-05-12 16:36:20 +0300
+Processing by FeedbackController#create as JSON
+  Parameters: {"feedback"=>"{name:Yauheni,surname:Busko,name_channel:e_busya,email:busko-007@mail.ru}"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (private method `require' called for nil:NilClass):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?feedback=Yauheni&feedback=Busko&feedback=e_busya&feedback=busko-007%40mail.ru" for 127.0.0.1 at 2019-05-12 16:41:31 +0300
+Processing by FeedbackController#create as JSON
+  Parameters: {"feedback"=>"busko-007@mail.ru"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `permit' for "busko-007@mail.ru":String):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?feedback=Yauheni&feedback=Busko&feedback=e_busya&feedback=busko007%40mailru" for 127.0.0.1 at 2019-05-12 16:42:56 +0300
+Processing by FeedbackController#create as JSON
+  Parameters: {"feedback"=>"busko007@mailru"}
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `permit' for "busko007@mailru":String):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?feedback=Yauheni&feedback=Busko&feedback=e_busya&feedback=busko-007%40mail.ru" for 127.0.0.1 at 2019-05-12 16:43:03 +0300
+Processing by FeedbackController#create as JSON
+  Parameters: {"feedback"=>"busko-007@mail.ru"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `permit' for "busko-007@mail.ru":String):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?feedback=Yauheni&feedback=Busko&feedback=e_busya&feedback=busko-007%40mail.ru" for 127.0.0.1 at 2019-05-12 16:45:14 +0300
+  [1m[35m (19.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FeedbackController#create as JSON
+  Parameters: {"feedback"=>"busko-007@mail.ru"}
+Completed 400 Bad Request in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: feedbacks):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?feedback=Yauheni&feedback=Busko&feedback=e_busya&feedback=busko-007%40mail.ru" for 127.0.0.1 at 2019-05-12 16:45:54 +0300
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FeedbackController#create as JSON
+  Parameters: {"feedback"=>"busko-007@mail.ru"}
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `permit' for "busko-007@mail.ru":String):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?name=Yauheni&surname=Busko&name_channel=e_busya&feedback=busko-007%40mail.ru" for 127.0.0.1 at 2019-05-12 16:48:28 +0300
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FeedbackController#create as JSON
+  Parameters: {"name"=>"Yauheni", "surname"=>"Busko", "name_channel"=>"e_busya", "feedback"=>"busko-007@mail.ru"}
+Completed 500 Internal Server Error in 88ms (ActiveRecord: 62.9ms)
+
+
+  
+ArgumentError (When assigning attributes, you must pass a hash as an argument.):
+  
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?feedback=Yauheni&feedback=Busko&feedback=e_busya&feedback=busko-007%40mail.ru" for 127.0.0.1 at 2019-05-12 16:50:07 +0300
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FeedbackController#create as JSON
+  Parameters: {"feedback"=>"busko-007@mail.ru"}
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `permit' for "busko-007@mail.ru":String):
+  
+app/controllers/feedback_controller.rb:16:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?feedback=Yauheni&feedback=Busko&feedback=e_busya&feedback=busko-007%40mail.ru" for 127.0.0.1 at 2019-05-12 16:51:35 +0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FeedbackController#create as JSON
+  Parameters: {"feedback"=>"busko-007@mail.ru"}
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `permit' for "busko-007@mail.ru":String):
+  
+app/controllers/feedback_controller.rb:17:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?feedback=%5Bobject%20Object%5D&feedback=%5Bobject%20Object%5D&feedback=%5Bobject%20Object%5D&feedback=%5Bobject%20Object%5D" for 127.0.0.1 at 2019-05-12 16:53:46 +0300
+Processing by FeedbackController#create as JSON
+  Parameters: {"feedback"=>"[object Object]"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `permit' for "[object Object]":String):
+  
+app/controllers/feedback_controller.rb:17:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
+Started POST "/api/feedback?feedback=Yauheni&feedback=Busko&feedback=e_busya&feedback=busko-007%40mail.ru" for 127.0.0.1 at 2019-05-12 16:54:48 +0300
+Processing by FeedbackController#create as JSON
+  Parameters: {"feedback"=>"busko-007@mail.ru"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `permit' for "busko-007@mail.ru":String):
+  
+app/controllers/feedback_controller.rb:17:in `feedback_params'
+app/controllers/feedback_controller.rb:5:in `create'
