@@ -9,13 +9,22 @@ function RouteWithSubRoutes(route) {
         <Route
         path={route.path}
         render={props => (
-            <route.component {...props} routes={route.routes} />
+            <route.component {...props} routes={route.routes} updateWindow={Header.updateWindow} />
         )}
         />
     );
 }
 
 class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { window: this.getPromo() }
+  }
+
+  updateWindow = (value) => {
+      this.setState({ window: value })
+  }
+
   getPromo() {
       return(
         <section id="promo" className="promo section offset-header">
@@ -38,8 +47,7 @@ class Header extends React.Component {
   }
 
   render () {
-    const { alert } = this.props;
-    var promo = this.getPromo()
+    var promo = this.state.window
     return (
         <Router history={history}>  
             <header id="header" className="header" style={{position: "inherit"}}>  
