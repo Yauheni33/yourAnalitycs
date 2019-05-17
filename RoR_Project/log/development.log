@@ -27628,3 +27628,158 @@ Processing by Admin::AdminFeedbackController#show as HTML
 Completed 200 OK in 2587ms (Views: 2580.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/admin/get_feedback" for 127.0.0.1 at 2019-05-17 10:48:50 +0300
+  [1m[35m (43.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::AdminFeedbackController#show as HTML
+  Rendering admin_feedback/show.html.erb within layouts/application
+  Rendered admin_feedback/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/yauheni/Desktop/StartupProject/RoR/RoR_Project/app/views/admin_feedback/show.html.erb:2: syntax error, unexpected ',', expecting ')'
+...act_component ('AdminFeedback', { records: @feedback }));
+...                              ^
+/Users/yauheni/Desktop/StartupProject/RoR/RoR_Project/app/views/admin_feedback/show.html.erb:4: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/Users/yauheni/Desktop/StartupProject/RoR/RoR_Project/app/views/admin_feedback/show.html.erb:6: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/admin_feedback/show.html.erb:2: syntax error, unexpected ',', expecting ')'
+app/views/admin_feedback/show.html.erb:4: syntax error, unexpected ensure, expecting ')'
+app/views/admin_feedback/show.html.erb:6: syntax error, unexpected end, expecting ')'
+app/controllers/admin/admin_feedback_controller.rb:5:in `show'
+Started GET "/admin/get_feedback" for 127.0.0.1 at 2019-05-17 10:52:19 +0300
+  [1m[35m (42.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::AdminFeedbackController#show as HTML
+  Rendering admin_feedback/show.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/yauheni/Desktop/StartupProject/RoR/RoR_Project/public/packs
+  [1m[36mFeedback Load (42.9ms)[0m  [1m[34mSELECT "feedbacks".* FROM "feedbacks"[0m
+  Rendered admin_feedback/show.html.erb within layouts/application (6924.4ms)
+Completed 200 OK in 9602ms (Views: 9541.7ms | ActiveRecord: 44.6ms)
+
+
+Started GET "/admin/get_feedback" for 127.0.0.1 at 2019-05-17 10:52:45 +0300
+Processing by Admin::AdminFeedbackController#show as HTML
+  Rendering admin_feedback/show.html.erb within layouts/application
+  Rendered admin_feedback/show.html.erb within layouts/application (538.7ms)
+Completed 200 OK in 595ms (Views: 593.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/get_feedback" for 127.0.0.1 at 2019-05-17 10:52:59 +0300
+Processing by Admin::AdminFeedbackController#show as HTML
+  Rendering admin_feedback/show.html.erb within layouts/application
+  [1m[36mFeedback Load (0.7ms)[0m  [1m[34mSELECT "feedbacks".* FROM "feedbacks"[0m
+  Rendered admin_feedback/show.html.erb within layouts/application (274.0ms)
+Completed 200 OK in 303ms (Views: 291.2ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/admin/get_feedback" for 127.0.0.1 at 2019-05-17 10:53:02 +0300
+Processing by Admin::AdminFeedbackController#show as HTML
+  Rendering admin_feedback/show.html.erb within layouts/application
+  [1m[36mFeedback Load (0.5ms)[0m  [1m[34mSELECT "feedbacks".* FROM "feedbacks"[0m
+  Rendered admin_feedback/show.html.erb within layouts/application (210.4ms)
+Completed 200 OK in 237ms (Views: 235.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/get_feedback" for 127.0.0.1 at 2019-05-17 10:53:04 +0300
+Processing by Admin::AdminFeedbackController#show as HTML
+  Rendering admin_feedback/show.html.erb within layouts/application
+  [1m[36mFeedback Load (0.5ms)[0m  [1m[34mSELECT "feedbacks".* FROM "feedbacks"[0m
+  Rendered admin_feedback/show.html.erb within layouts/application (230.8ms)
+Completed 200 OK in 314ms (Views: 312.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/get_feedback" for 127.0.0.1 at 2019-05-17 10:53:14 +0300
+Processing by Admin::AdminFeedbackController#show as HTML
+  Rendering admin_feedback/show.html.erb within layouts/application
+  Rendered admin_feedback/show.html.erb within layouts/application (278.9ms)
+Completed 200 OK in 312ms (Views: 311.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/get_feedback" for 127.0.0.1 at 2019-05-17 10:53:16 +0300
+Processing by Admin::AdminFeedbackController#show as HTML
+  Rendering admin_feedback/show.html.erb within layouts/application
+  Rendered admin_feedback/show.html.erb within layouts/application (220.6ms)
+Completed 200 OK in 251ms (Views: 250.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/get_feedback" for 127.0.0.1 at 2019-05-17 10:53:19 +0300
+Processing by Admin::AdminFeedbackController#show as HTML
+  Rendering admin_feedback/show.html.erb within layouts/application
+  Rendered admin_feedback/show.html.erb within layouts/application (219.2ms)
+Completed 200 OK in 246ms (Views: 245.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/get_feedback" for 127.0.0.1 at 2019-05-17 10:53:21 +0300
+Processing by Admin::AdminFeedbackController#show as HTML
+  Rendering admin_feedback/show.html.erb within layouts/application
+  Rendered admin_feedback/show.html.erb within layouts/application (221.9ms)
+Completed 200 OK in 249ms (Views: 248.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-17 10:53:36 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 55ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2019-05-17 10:53:41 +0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"path"=>"admin"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 48ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/feedback" for 127.0.0.1 at 2019-05-17 10:53:47 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/admin/feedback"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/admin/get_feedback" for 127.0.0.1 at 2019-05-17 10:53:54 +0300
+Processing by Admin::AdminFeedbackController#show as HTML
+  Rendering admin_feedback/show.html.erb within layouts/application
+  Rendered admin_feedback/show.html.erb within layouts/application (257.4ms)
+Completed 200 OK in 300ms (Views: 298.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/get_feedback" for 127.0.0.1 at 2019-05-17 10:54:07 +0300
+Processing by Admin::AdminFeedbackController#show as HTML
+  Rendering admin_feedback/show.html.erb within layouts/application
+  Rendered admin_feedback/show.html.erb within layouts/application (304.4ms)
+Completed 200 OK in 341ms (Views: 340.1ms | ActiveRecord: 0.0ms)
+
+
