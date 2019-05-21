@@ -35071,3 +35071,14 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/contact" for 127.0.0.1 at 2019-05-21 19:19:12 +0300
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Parameters: {"path"=>"contact"}
+  Rendering welcome/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/yauheni/Desktop/StartupProject/RoR/RoR_Project/public/packs
+  Rendered welcome/index.html.erb within layouts/application (5876.1ms)
+Completed 200 OK in 11543ms (Views: 11530.7ms | ActiveRecord: 0.0ms)
+
+
