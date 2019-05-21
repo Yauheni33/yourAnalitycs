@@ -3,14 +3,22 @@
 
 const { resolve } = require('path')
 const { existsSync } = require('fs')
-const Environment = require('./environment')
+const Environment = require('./environments/base')
+const loaders = require('./rules')
+const config = require('./config')
+const devServer = require('./dev_server')
+const { nodeEnv } = require('./env')
 
-function createEnvironment() {
-  const path = resolve(__dirname, 'environments', `${process.env.NODE_ENV}.js`)
+const createEnvironment = () => {
+  const path = resolve(__dirname, 'environments', `${nodeEnv}.js`)
   const constructor = existsSync(path) ? require(path) : Environment
   return new constructor()
 }
 
-const environment = createEnvironment()
-
-module.exports = { environment, Environment }
+module.exports = {
+  config,
+  devServer,
+  environment: createEnvironment(),
+  Environment,
+  loaders
+}
