@@ -13,22 +13,24 @@ class FormFeedback extends React.Component {
         this.changeName = this.changeName.bind(this);
         this.changeSurname = this.changeSurname.bind(this);
         this.changeChannel = this.changeChannel.bind(this);
-        this.changeEmail = this.changeEmail.bing(this);
+        this.changeEmail = this.changeEmail.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleSubmit(event) {
-        axios.post('/api/feedback', {
-            firstName: this.state.name,
-            surname: this.state.surname,
-            channel: this.state.channel,
-            email: this.state.email 
+        axios.post('/api/feedback', { 
+            feedback: {
+                firstName: this.state.name,
+                surname: this.state.surname,
+                channel: this.state.channel,
+                email: this.state.email 
+            }
         })
         .then(function(response) {
-            alert(response)
+            alert('Good')
         })
         .catch(function(error) {
-            alert(response)
+            alert('Bad')
         })
     }
 
