@@ -17,12 +17,12 @@ class FormFeedback extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleSubmit(event) {
+    handleSubmit() {
         axios.post('/api/feedback', { 
             feedback: {
-                firstName: this.state.name,
+                name: this.state.name,
                 surname: this.state.surname,
-                channel: this.state.channel,
+                name_channel: this.state.channel,
                 email: this.state.email 
             }
         })
