@@ -1,5 +1,6 @@
 import React from "react";
 import axios from 'axios';
+import Banner from 'react-js-banner';
 
 class FormFeedback extends React.Component {
     constructor(props) {
@@ -17,21 +18,26 @@ class FormFeedback extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleSubmit() {
-        axios.post('/api/feedback', { 
-            feedback: {
-                name: this.state.name,
-                surname: this.state.surname,
-                name_channel: this.state.channel,
-                email: this.state.email 
+    handleSubmit(event) {
+        axios({
+            method: 'POST',
+            url: '/api/feedback',
+            data: {
+                feedback: {
+                    name: this.state.name,
+                    surname: this.state.surname,
+                    name_channel: this.state.channel,
+                    email: this.state.email 
+                }
             }
         })
         .then(function(response) {
-            alert('Good')
+            alert('Good');
         })
         .catch(function(error) {
-            alert('Bad')
+            alert('Bad');
         })
+        event.preventDefault();
     }
 
     changeName(event) {
