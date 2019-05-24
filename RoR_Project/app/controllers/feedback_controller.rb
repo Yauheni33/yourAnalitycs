@@ -4,7 +4,7 @@ class FeedbackController < ApplicationController
   def create 
     feedback = Feedback.new(feedback_params)
     if feedback.save
-      render status: :created
+      render json: feedback, status: :ok
     else
       render json: feedback.errors, status: :unprocessable_entity
     end
