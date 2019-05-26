@@ -1,6 +1,4 @@
 {
-  "application.js": "/packs/application-aaad0dfee45474dc5fac.js",
-  "application.js.map": "/packs/application-aaad0dfee45474dc5fac.js.map",
-  "server_rendering.js": "/packs/server_rendering-3373e34492bbfd28067d.js",
-  "server_rendering.js.map": "/packs/server_rendering-3373e34492bbfd28067d.js.map"
+  "application.js": "/packs/application-14244c53efaeadba256b.js",
+  "server_rendering.js": "/packs/server_rendering-366f4a52081ef8e2d05e.js"
 }
