@@ -7,9 +7,4 @@ Suite:
 - [React js](https://github.com/facebook/react) &mdash; Our front end is an React js app that communicates with the Rails API.
 - [PostgreSQL](https://www.postgresql.org/) &mdash; Our main data store is in Postgres.
 
-Bot:
-- [Python](https://www.python.org) &mdash; Build all bots
-
-Crawler + Parser:
-- [Ruby](https://github.com/ruby/ruby)
 
