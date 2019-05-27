@@ -1,0 +1,9 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: myapp_development
+  username: test
+  pool: 5
+  password: 080898
+  host: 127.0.0.1
+  port: 5432
