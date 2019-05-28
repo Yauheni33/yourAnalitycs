@@ -9,7 +9,7 @@ class Index extends React.Component {
         return(
             <Router>
                 <Header />
-                <Container />
+                <Container height={"100%"}/>
                 <Footer />
             </Router>
         );
