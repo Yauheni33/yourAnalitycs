@@ -23,7 +23,7 @@
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
-    "tar": ">=4.4.2",
+    "tar": ">=4.4.15",
     "webpack-dev-server": ">=3.1.11"
   }
 }
